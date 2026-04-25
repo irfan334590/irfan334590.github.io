@@ -111,11 +111,14 @@ h1 span{display:block; color:var(--blue)}
 .profile-line b{color:var(--ink)}
 .icon-dot{width:16px; height:16px; border-radius:7px; background:var(--soft-2); border:1px solid var(--line); margin-top:4px; position:relative}
 .icon-dot:after{content:""; position:absolute; inset:4px; border-radius:50%; background:var(--blue-2)}
+.mini-icon{width:24px; height:24px; display:grid; place-items:center; font-size:17px; margin-top:1px}
 
 .stats{background:white; border-bottom:1px solid var(--line-soft)}
 .stats-grid{display:grid; grid-template-columns:repeat(5,1fr); border-left:1px solid var(--line-soft)}
 @media(max-width:940px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}}
-.stat{padding:28px 22px; border-right:1px solid var(--line-soft)}
+.stat{padding:28px 22px; border-right:1px solid var(--line-soft); display:grid; grid-template-columns:48px 1fr; gap:14px; align-items:center}
+.stat-icon{width:46px; height:46px; border-radius:16px; display:grid; place-items:center; background:var(--soft); border:1px solid var(--line); color:var(--blue)}
+.stat-icon svg{width:28px; height:28px; stroke:currentColor}
 .stat .num{font-family:var(--serif); font-size:clamp(36px,4.7vw,58px); line-height:1; font-weight:800; color:var(--blue); letter-spacing:-.04em}
 .stat .num span{font-size:.48em; color:var(--teal)}
 .stat .label{margin-top:9px; font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:800}
@@ -138,6 +141,25 @@ h2 em{color:var(--teal); font-style:italic}
 .highlight-card p{position:relative; color:rgba(255,255,255,.84); line-height:1.74; margin:0}
 
 .visual-panel{margin-top:38px; background:var(--soft); border:1px solid var(--line); border-radius:30px; padding:30px; box-shadow:var(--shadow-soft)}
+.ecosystem{margin-top:24px; background:white; border:1px solid var(--line); border-radius:28px; padding:28px; overflow:hidden}
+.ecosystem-grid{display:grid; grid-template-columns:1fr 1.15fr 1fr; gap:18px; align-items:center}
+.eco-stack{display:grid; gap:14px}
+.eco-node{display:grid; grid-template-columns:52px 1fr; gap:14px; align-items:center; padding:16px; border:1px solid var(--line); border-radius:20px; background:#fff; box-shadow:0 8px 22px rgba(16,32,43,.045)}
+.eco-node h4{margin:0; font-size:16px; color:var(--ink)}
+.eco-node p{margin:3px 0 0; font-size:12.5px; color:var(--muted); line-height:1.45}
+.eco-icon{width:48px; height:48px; border-radius:16px; display:grid; place-items:center; background:var(--soft); color:var(--blue); border:1px solid var(--line)}
+.eco-icon svg{width:28px; height:28px; stroke:currentColor}
+.eco-center{position:relative; min-height:420px; display:grid; place-items:center}
+.eco-ring{width:min(360px,100%); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at center, #fff 0 31%, rgba(23,107,149,.08) 32% 48%, rgba(27,138,122,.07) 49% 67%, rgba(211,107,50,.06) 68% 100%); border:1px solid var(--line); display:grid; place-items:center; position:relative}
+.eco-core{width:145px; height:145px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--teal)); color:white; display:grid; place-items:center; text-align:center; padding:18px; box-shadow:0 18px 46px rgba(15,61,94,.24); font-weight:850; line-height:1.25}
+.orbit{position:absolute; width:74px; height:74px; border-radius:24px; background:white; border:1px solid var(--line); display:grid; place-items:center; box-shadow:0 12px 28px rgba(16,32,43,.08); color:var(--blue)}
+.orbit svg{width:38px; height:38px; stroke:currentColor}
+.orbit.o1{top:16px; left:50%; transform:translateX(-50%); color:var(--teal)}
+.orbit.o2{right:20px; top:42%; color:var(--orange)}
+.orbit.o3{bottom:22px; left:50%; transform:translateX(-50%); color:var(--purple)}
+.orbit.o4{left:20px; top:42%; color:var(--green)}
+.eco-arrow{height:2px; background:linear-gradient(90deg,transparent,var(--line),transparent)}
+@media(max-width:980px){.ecosystem-grid{grid-template-columns:1fr}.eco-center{min-height:340px}.eco-ring{width:min(320px,100%)}}
 .visual-title{display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:24px}
 .visual-title h3{font-family:var(--serif); font-size:30px; letter-spacing:-.025em; margin:0; color:var(--blue); font-weight:760}
 .visual-title p{margin:0; color:var(--muted); font-size:14px; max-width:58ch}
@@ -158,6 +180,8 @@ h2 em{color:var(--teal); font-style:italic}
 .roles{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 @media(max-width:850px){.roles{grid-template-columns:1fr}}
 .role{background:white; border:1px solid var(--line); border-radius:24px; padding:28px; box-shadow:var(--shadow-soft); position:relative; overflow:hidden}
+.role-icon{width:54px; height:54px; border-radius:18px; background:var(--soft); border:1px solid var(--line); display:grid; place-items:center; color:var(--blue); margin-bottom:16px}
+.role-icon svg{width:31px; height:31px; stroke:currentColor}
 .role:before{content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--blue)}
 .role:nth-child(2):before{background:var(--teal)}.role:nth-child(3):before{background:var(--orange)}.role:nth-child(4):before{background:var(--purple)}
 .date{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-2); font-weight:800; margin-bottom:12px}
@@ -246,12 +270,12 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
   <div class="wrap hero-grid">
     <div>
       <div class="hero-kicker">
-        <span class="eyebrow">Senior Researcher · Principal Investigator · Visiting Research Fellow</span>
+        <span class="eyebrow">AI for healthcare · wearables · translational medical imaging</span>
         <span class="status"><span class="status-dot"></span>Open to collaboration</span>
       </div>
       <h1>Muhammad Irfan <span>(PhD, PhD)</span></h1>
       <p class="hero-thesis">Designing <em>efficient, clinically grounded AI</em> for dementia care, cardiovascular risk, sleep health, wearable sensing, and translational medical imaging.</p>
-      <p class="hero-summary">My research connects hospital-grade data with real-world care: MRI, CT, PET, EEG, ECG, PPG, wearable sensors, edge AI and federated learning. The goal is not only better algorithms, but deployable systems that can support patients, caregivers, clinicians and research consortia.</p>
+      <p class="hero-summary">I work on AI systems that connect hospital-grade data with real-world care: MRI, CT, PET, EEG, ECG, PPG, wearable sensors, edge AI and federated learning. My goal is to build models that are accurate, efficient and useful for patients, caregivers, clinicians and research teams.</p>
       <div class="actions">
         <a class="btn primary" href="#visuals">View research visualisation <span class="arrow">→</span></a>
         <a class="btn" href="#publications">Selected publications</a>
@@ -263,27 +287,13 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 
     <aside class="profile-card" aria-label="Profile card">
       <div class="portrait">
-        <svg viewBox="0 0 420 420" role="img" aria-label="Biomedical AI illustration">
-          <defs>
-            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0f3d5e"/><stop offset="1" stop-color="#1b8a7a"/></linearGradient>
-            <linearGradient id="g2" x1="0" x2="1"><stop stop-color="#dbeff5"/><stop offset="1" stop-color="#eef8f3"/></linearGradient>
-          </defs>
-          <rect x="34" y="42" width="352" height="336" rx="44" fill="url(#g2)"/>
-          <circle cx="210" cy="180" r="78" fill="white" stroke="#b8d1dc" stroke-width="4"/>
-          <path d="M166 180c22-58 66-58 88 0-22 58-66 58-88 0Z" fill="none" stroke="url(#g1)" stroke-width="12" stroke-linecap="round"/>
-          <path d="M121 257c32-34 66-51 101-51 35 0 63 17 77 51" fill="none" stroke="#0f3d5e" stroke-width="12" stroke-linecap="round"/>
-          <path d="M99 123c35-18 67-18 96 0M225 123c34-18 66-18 96 0" fill="none" stroke="#1b8a7a" stroke-width="9" stroke-linecap="round"/>
-          <circle cx="105" cy="310" r="15" fill="#d36b32"/><circle cx="315" cy="310" r="15" fill="#6b5bd6"/><circle cx="210" cy="318" r="15" fill="#1b8a7a"/>
-          <path d="M120 310h75M225 318h75" stroke="#8fb5c3" stroke-width="6" stroke-linecap="round"/>
-          <path d="M210 75v48M210 239v52" stroke="#8fb5c3" stroke-width="7" stroke-linecap="round"/>
-        </svg>
-        <div class="portrait-note">To add your photo: save it as <b>profile.jpg</b>, then replace this SVG with &lt;img src="profile.jpg" class="profile-img" alt="Muhammad Irfan"&gt;.</div>
+        <img src="data:image/jpeg;base64,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" alt="Muhammad Irfan (PhD, PhD)" class="profile-img">
       </div>
       <div class="profile-lines">
-        <div class="profile-line"><span class="icon-dot"></span><span><b>University of Turku</b><br>Senior Researcher; AI Technical Lead, AI4HOPE</span></div>
-        <div class="profile-line"><span class="icon-dot"></span><span><b>Fudan University</b><br>Project PI, Shanghai Sci-Tech “From PSG to Wristband”</span></div>
-        <div class="profile-line"><span class="icon-dot"></span><span><b>University of Sydney</b><br>Visiting Researcher, Biomedical Engineering</span></div>
-        <div class="profile-line"><span class="icon-dot"></span><span><b>Research focus</b><br>Dementia care, heart–brain–sleep axis, wearables, edge AI, translational imaging</span></div>
+        <div class="profile-line"><span class="mini-icon">🏛️</span><span><b>University of Turku</b><br>Senior Researcher; AI Technical Lead, AI4HOPE</span></div>
+        <div class="profile-line"><span class="mini-icon">🔬</span><span><b>Fudan University</b><br>Project PI, Shanghai Sci-Tech “From PSG to Wristband”</span></div>
+        <div class="profile-line"><span class="mini-icon">🌏</span><span><b>University of Sydney</b><br>Visiting Researcher, Biomedical Engineering</span></div>
+        <div class="profile-line"><span class="mini-icon">🧠</span><span><b>Research focus</b><br>Dementia care, heart–brain–sleep axis, wearables, edge AI, translational imaging</span></div>
       </div>
     </aside>
   </div>
@@ -291,11 +301,11 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 
 <section class="stats">
   <div class="wrap stats-grid">
-    <div class="stat"><div class="num">28<span>+</span></div><div class="label">Peer-reviewed papers</div></div>
-    <div class="stat"><div class="num">2</div><div class="label">Doctorates</div></div>
-    <div class="stat"><div class="num">€20M<span>+</span></div><div class="label">Co-led applications</div></div>
-    <div class="stat"><div class="num">17</div><div class="label">AI4HOPE partners</div></div>
-    <div class="stat"><div class="num">3</div><div class="label">Continental networks</div></div>
+    <div class="stat"><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19.5V5.8A2.8 2.8 0 0 1 6.8 3H20v15H6.8A2.8 2.8 0 0 0 4 20.8"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div><div><div class="num">28<span>+</span></div><div class="label">Peer-reviewed papers</div></div></div>
+    <div class="stat"><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 8l9-4 9 4-9 4-9-4Z"/><path d="M7 10.5V16c2.5 2 7.5 2 10 0v-5.5"/><path d="M21 8v6"/></svg></div><div><div class="num">2</div><div class="label">Doctorates</div></div></div>
+    <div class="stat"><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M15 8.5c-.7-.6-1.7-1-2.8-1-2.3 0-4.2 2-4.2 4.5s1.9 4.5 4.2 4.5c1.1 0 2.1-.4 2.8-1"/><path d="M6.8 10.5h6.3M6.8 13.5h6.3"/></svg></div><div><div class="num">€20M<span>+</span></div><div class="label">Co-led applications</div></div></div>
+    <div class="stat"><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><circle cx="12" cy="17" r="3"/><path d="M9 10.5l2 4M15 10.5l-2 4M10 8h4"/></svg></div><div><div class="num">17</div><div class="label">AI4HOPE partners</div></div></div>
+    <div class="stat"><div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><div><div class="num">3</div><div class="label">Continental networks</div></div></div>
   </div>
 </section>
 
@@ -311,17 +321,44 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
       <p>I completed my first PhD in Biomedical Engineering at Fudan University in December 2024 and my second PhD in Information and Communication Engineering at the University of Turku in April 2026. Together, these degrees connect biomedical measurement, signal processing, imaging and computationally efficient AI.</p>
     </article>
     <aside class="highlight-card reveal">
-      <h3>The core message</h3>
-      <p>The strongest way to position this profile is not “AI for healthcare” in general. It is more specific and more credible: translating multimodal sleep, cardiovascular, physiological and imaging biomarkers into deployable AI systems for dementia care, CVD risk prediction and personalised monitoring.</p>
+      <h3>What I focus on</h3>
+      <p>I focus on translating multimodal sleep, cardiovascular, physiological and imaging biomarkers into deployable AI systems for dementia care, CVD risk prediction and personalised monitoring.</p>
     </aside>
   </div>
 
   <div class="visual-panel reveal" id="visuals">
     <div class="visual-title">
       <h3>Research visualisation</h3>
-      <p>A professional reader should immediately see the logic of the work: multimodal data enters, efficient and privacy-aware AI learns, and clinically meaningful outputs support dementia care, CVD risk and treatment planning.</p>
+      <p>My research follows a simple path: collect meaningful biomedical data, build efficient and privacy-aware AI models, and translate the outputs into dementia care, CVD risk prediction and treatment planning.</p>
     </div>
-    <div class="pipeline">
+
+    <div class="ecosystem">
+      <div class="ecosystem-grid">
+        <div class="eco-stack">
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 12h3l2-6 4 12 2-6h3"/><path d="M4 19h16"/></svg></div><div><h4>Wearable signals</h4><p>ECG, PPG, EEG, GSR, EMG and actigraphy</p></div></div>
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><div><h4>Medical imaging</h4><p>MRI, CT, PET and ultrasound AI pipelines</p></div></div>
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.4-9-10a5.2 5.2 0 0 1 9-5 5.2 5.2 0 0 1 9 5c-2 5.6-9 10-9 10Z"/></svg></div><div><h4>Clinical outcomes</h4><p>Dementia, CVD, pain, mood and quality of life</p></div></div>
+        </div>
+
+        <div class="eco-center">
+          <div class="eco-ring">
+            <div class="orbit o1"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 18c-4-1-6-4-6-8a6 6 0 0 1 11-3 5 5 0 0 1 7 5c0 4-3 6-7 6"/><path d="M12 8v8M8 12h8"/></svg></div>
+            <div class="orbit o2"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 15c4-8 12-8 16 0"/><path d="M8 15c2-4 6-4 8 0"/><circle cx="12" cy="15" r="2"/></svg></div>
+            <div class="orbit o3"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4M8 10h8M8 14h5"/></svg></div>
+            <div class="orbit o4"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 12h14M12 5v14"/><circle cx="12" cy="12" r="8"/></svg></div>
+            <div class="eco-core">Efficient AI for healthcare translation</div>
+          </div>
+        </div>
+
+        <div class="eco-stack">
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 12c3-6 13-6 16 0-3 6-13 6-16 0Z"/><circle cx="12" cy="12" r="3"/></svg></div><div><h4>Risk prediction</h4><p>Early detection and longitudinal monitoring</p></div></div>
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3v18M4 8h16M6 16h12"/><path d="M8 8c0-3 8-3 8 0M8 16c0 3 8 3 8 0"/></svg></div><div><h4>Federated learning</h4><p>Privacy-aware multi-site model development</p></div></div>
+          <div class="eco-node"><div class="eco-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 20V8M12 20V4M18 20v-9"/><path d="M4 20h16"/></svg></div><div><h4>Clinical impact</h4><p>Dashboards, decision support and care pathways</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pipeline" style="margin-top:18px;">
       <div class="v-card teal">
         <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#e6f6f3"/><path d="M15 34h8l4-13 9 28 5-15h8" fill="none" stroke="#1b8a7a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <h4>Wearable physiology</h4>
@@ -343,21 +380,6 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
         <div class="flow-step"><b>3 · Protect</b>Federated and edge–cloud workflows reduce data movement and support privacy.</div>
         <div class="flow-step"><b>4 · Translate</b>Risk models, dashboards and caregiver/clinician decision-support pathways.</div>
       </div>
-      <div class="v-card gold">
-        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff7e5"/><path d="M19 32c8-18 18-18 26 0-8 18-18 18-26 0Z" fill="none" stroke="#b88724" stroke-width="4"/><circle cx="32" cy="32" r="6" fill="#b88724"/></svg>
-        <h4>Heart–brain–sleep axis</h4>
-        <p>Connecting sleep physiology, cardiovascular dysfunction, dementia risk, stroke and cognitive decline.</p>
-      </div>
-      <div class="v-card green">
-        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#eef8f2"/><path d="M18 39l12-12 8 8 10-14" fill="none" stroke="#2e8b57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 48h32" stroke="#2e8b57" stroke-width="4" stroke-linecap="round"/></svg>
-        <h4>Efficient AI</h4>
-        <p>LiteML architectures, lightweight CNNs, hybrid models and explainable pipelines built for practical deployment.</p>
-      </div>
-      <div class="v-card">
-        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#eaf4fa"/><path d="M22 37c-5-7-4-16 4-20 6-3 11 1 13 6 6-1 11 3 11 10 0 8-7 14-18 19-4-2-7-4-10-7" fill="none" stroke="#0f3d5e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h4>Care impact</h4>
-        <p>Monitoring, risk stratification, adaptive intervention design, caregiver support and personalised treatment planning.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -365,10 +387,10 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 <section class="section wrap" id="roles">
   <div class="section-head reveal"><div class="section-num">02 /</div><h2>Concurrent roles across <em>Finland, China and Australia</em>.</h2></div>
   <div class="roles">
-    <article class="role reveal"><div class="date">2025 — Present · Full time</div><h3>Senior Researcher · AI Technical Lead, AI4HOPE</h3><div class="org">University of Turku, Institute of Biomedicine · Finland</div><p>AI Technical Lead for WP3 Task 3.4 in the €6.4M EU Horizon AI4HOPE consortium. Developing explainable AI models for anxiety, depression, pain and quality-of-life trajectories in dementia patients using wearable cardiovascular signals and clinical data.</p><div class="badges"><span class="badge">EU Horizon</span><span class="badge">17 partners</span><span class="badge">Dementia care</span></div></article>
-    <article class="role reveal"><div class="date">2025 — Present</div><h3>Project Principal Investigator</h3><div class="org">Fudan University · Shanghai, China</div><p>Leading the 400,000 RMB “From PSG to Wristband” Shanghai Sci-Tech project, translating polysomnography-derived sleep and cardiovascular biomarkers to wristband-based CVD–dementia risk stratification.</p><div class="badges"><span class="badge">PI</span><span class="badge">PSG to wristband</span><span class="badge">Transfer learning</span></div></article>
-    <article class="role reveal"><div class="date">2025 — Present</div><h3>Visiting Researcher</h3><div class="org">University of Sydney, School of Biomedical Engineering · Australia</div><p>Collaborating with Prof. Wei Chen and clinical partners on physiological signal monitoring and AI for cardiac and mental health, strengthening links with the Australian biomedical engineering and clinical research ecosystem.</p><div class="badges"><span class="badge">USYD</span><span class="badge">Physiological AI</span></div></article>
-    <article class="role reveal"><div class="date">2025 — Present</div><h3>Teacher · Statistical Data Analysis</h3><div class="org">University of Turku, Department of Computing · Finland</div><p>Co-teaching Statistical Data Analysis to approximately 150 undergraduate and graduate students using Python, Jupyter notebooks and real biomedical datasets including MRI, PPG, ECG, EEG and actigraphy.</p><div class="badges"><span class="badge">Teaching</span><span class="badge">~150 students</span></div></article>
+    <article class="role reveal"><div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M8 12h8M12 8v8"/></svg></div><div class="date">2025 — Present · Full time</div><h3>Senior Researcher · AI Technical Lead, AI4HOPE</h3><div class="org">University of Turku, Institute of Biomedicine · Finland</div><p>AI Technical Lead for WP3 Task 3.4 in the €6.4M EU Horizon AI4HOPE consortium. Developing explainable AI models for anxiety, depression, pain and quality-of-life trajectories in dementia patients using wearable cardiovascular signals and clinical data.</p><div class="badges"><span class="badge">EU Horizon</span><span class="badge">17 partners</span><span class="badge">Dementia care</span></div></article>
+    <article class="role reveal"><div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 18c-4-1-6-4-6-8a6 6 0 0 1 11-3 5 5 0 0 1 7 5c0 4-3 6-7 6"/><path d="M12 8v8M8 12h8"/></svg></div><div class="date">2025 — Present</div><h3>Project Principal Investigator</h3><div class="org">Fudan University · Shanghai, China</div><p>Leading the 400,000 RMB “From PSG to Wristband” Shanghai Sci-Tech project, translating polysomnography-derived sleep and cardiovascular biomarkers to wristband-based CVD–dementia risk stratification.</p><div class="badges"><span class="badge">PI</span><span class="badge">PSG to wristband</span><span class="badge">Transfer learning</span></div></article>
+    <article class="role reveal"><div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><div class="date">2025 — Present</div><h3>Visiting Researcher</h3><div class="org">University of Sydney, School of Biomedical Engineering · Australia</div><p>Collaborating with Prof. Wei Chen and clinical partners on physiological signal monitoring and AI for cardiac and mental health, strengthening links with the Australian biomedical engineering and clinical research ecosystem.</p><div class="badges"><span class="badge">USYD</span><span class="badge">Physiological AI</span></div></article>
+    <article class="role reveal"><div class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 19.5V5.8A2.8 2.8 0 0 1 6.8 3H20v15H6.8A2.8 2.8 0 0 0 4 20.8"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div><div class="date">2025 — Present</div><h3>Teacher · Statistical Data Analysis</h3><div class="org">University of Turku, Department of Computing · Finland</div><p>Co-teaching Statistical Data Analysis to approximately 150 undergraduate and graduate students using Python, Jupyter notebooks and real biomedical datasets including MRI, PPG, ECG, EEG and actigraphy.</p><div class="badges"><span class="badge">Teaching</span><span class="badge">~150 students</span></div></article>
   </div>
 </section>
 
@@ -411,7 +433,7 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
   <div class="section-head reveal"><div class="section-num">05 /</div><h2>Funding portfolio with new <em>postdoctoral dementia-care support</em>.</h2></div>
   <div class="funding-grid">
     <div>
-      <article class="grant reveal"><div class="year">2026</div><div><h3>Turku University Foundation Postdoctoral Funding</h3><p><b>New funding.</b> Postdoctoral support for dementia care using artificial intelligence. This strengthens the independent research trajectory after two PhDs.</p></div></article>
+      <article class="grant reveal"><div class="year">2026</div><div><h3>Turku University Foundation Postdoctoral Funding</h3><p><b>New funding.</b> I received postdoctoral support for dementia care using artificial intelligence, strengthening my independent research direction after two PhDs.</p></div></article>
       <article class="grant reveal"><div class="year">2025—Present</div><div><h3>From PSG to Wristband — Shanghai Sci-Tech Co-research</h3><p><b>400,000 RMB · Project PI.</b> Multi-country collaboration across Fudan, University of Turku and University of Sydney. Translating PSG biomarkers to wristband-based CVD–dementia risk stratification.</p></div></article>
       <article class="grant reveal"><div class="year">2024—2027</div><div><h3>AI4HOPE — EU Horizon Europe</h3><p><b>€6.4M total consortium.</b> AI Technical Lead for WP3 Task 3.4, including wearable cardiovascular signals, clinical data integration, explainable AI, federated learning and dementia-care pathways.</p></div></article>
       <article class="grant reveal"><div class="year">2024—2025</div><div><h3>University of Turku Research Grant</h3><p><b>€24,000 · Lead applicant.</b> Deep learning for PET/MRI cerebrovascular stratification.</p></div></article>
@@ -433,7 +455,7 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 </section>
 
 <section class="section wrap" id="outputs">
-  <div class="section-head reveal"><div class="section-num">06 /</div><h2>Technical outputs that show <em>depth, not decoration</em>.</h2></div>
+  <div class="section-head reveal"><div class="section-num">06 /</div><h2>Selected technical outputs and systems.</h2></div>
   <div class="output-grid">
     <article class="output-card reveal"><h3>Wearables & signals</h3><ul><li>Neonatal sleep-staging AI pipeline with benchmark gains</li><li>Non-contact ECG system for elderly care and ambient monitoring</li><li>Emotion-recognition pipelines using minimal wearable sensing</li><li>Polar SDK and real-time physiology streaming workflows</li></ul></article>
     <article class="output-card reveal"><h3>Imaging & clinical AI</h3><ul><li>Lightweight MRI brain-tumour detection and segmentation models</li><li>Brain CT stroke classification using pretrained CNNs</li><li>PET/MRI cerebrovascular stratification</li><li>Head-and-neck cancer imaging collaborations</li></ul></article>
@@ -444,7 +466,7 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 <section class="section wrap" id="teaching">
   <div class="section-head reveal"><div class="section-num">07 /</div><h2>Teaching, supervision and academic leadership.</h2></div>
   <div class="split">
-    <article class="card reveal"><div class="eyebrow">Teaching</div><p>Teacher for Statistical Data Analysis at the University of Turku, serving approximately 150 undergraduate and graduate students. Teaching uses biomedical datasets and Python/Jupyter notebooks to connect statistics, machine learning and health technology.</p><p>The important message is not only that teaching happened, but that teaching is research-led: students work with problems that resemble real biomedical AI pipelines.</p></article>
+    <article class="card reveal"><div class="eyebrow">Teaching</div><p>Teacher for Statistical Data Analysis at the University of Turku, serving approximately 150 undergraduate and graduate students. Teaching uses biomedical datasets and Python/Jupyter notebooks to connect statistics, machine learning and health technology.</p><p>I design teaching around real biomedical AI problems, so students can connect statistics and machine learning with practical health technology use cases.</p></article>
     <article class="card reveal"><div class="eyebrow">Supervision and leadership</div><p>Co-supervisor of one PhD student and supervisor/co-supervisor of six MSc theses on topics including brain tumour and head-and-neck segmentation, MRI outcome prediction, sleep staging and edge AI for wearable health monitoring.</p><p>Leadership includes AI4HOPE technical coordination, federated-learning planning, cross-site validation, junior researcher mentoring and consortium-building across Europe, Australia and China.</p></article>
   </div>
 </section>
@@ -460,7 +482,7 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 </section>
 
 <section class="section wrap" id="contact" style="border-bottom:0">
-  <div class="section-head reveal"><div class="section-num">09 /</div><h2>Open to serious <em>collaboration</em>.</h2></div>
+  <div class="section-head reveal"><div class="section-num">09 /</div><h2>Open to <em>collaboration</em>.</h2></div>
   <div class="contact-grid">
     <div class="reveal"><p class="contact-title">Let’s <em>connect.</em></p><p style="color:var(--muted);line-height:1.75;max-width:58ch">I welcome conversations on grant consortia, clinical AI validation, heart–brain–sleep axis research, wearable sensing for dementia care, edge/federated learning, translational imaging and postdoctoral or faculty-level collaborations.</p>
       <div class="contact-lines">
