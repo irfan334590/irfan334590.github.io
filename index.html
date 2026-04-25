@@ -112,6 +112,10 @@ h1 span{display:block; color:var(--blue)}
 .icon-dot{width:16px; height:16px; border-radius:7px; background:var(--soft-2); border:1px solid var(--line); margin-top:4px; position:relative}
 .icon-dot:after{content:""; position:absolute; inset:4px; border-radius:50%; background:var(--blue-2)}
 .mini-icon{width:24px; height:24px; display:grid; place-items:center; font-size:17px; margin-top:1px}
+.avatar-scene{margin-top:16px; background:#fff; border:1px solid var(--line); border-radius:24px; padding:18px; box-shadow:0 10px 28px rgba(16,32,43,.06)}
+.avatar-scene svg{width:100%; height:auto; display:block}
+.avatar-caption{font-size:12.5px; color:var(--muted); margin-top:10px; line-height:1.45}
+.mono-line{stroke:#0f3d5e; stroke-width:2.3; stroke-linecap:round; stroke-linejoin:round; fill:none}
 
 .stats{background:white; border-bottom:1px solid var(--line-soft)}
 .stats-grid{display:grid; grid-template-columns:repeat(5,1fr); border-left:1px solid var(--line-soft)}
@@ -141,6 +145,24 @@ h2 em{color:var(--teal); font-style:italic}
 .highlight-card p{position:relative; color:rgba(255,255,255,.84); line-height:1.74; margin:0}
 
 .visual-panel{margin-top:38px; background:var(--soft); border:1px solid var(--line); border-radius:30px; padding:30px; box-shadow:var(--shadow-soft)}
+.present-box{background:white; border:1px solid var(--line); border-radius:28px; padding:26px; margin:22px 0; box-shadow:0 12px 34px rgba(16,32,43,.055)}
+.present-head{display:flex; justify-content:space-between; align-items:center; gap:18px; margin-bottom:18px}
+.present-head h4{font-family:var(--serif); font-size:26px; margin:0; color:var(--blue); letter-spacing:-.02em}
+.present-head p{margin:4px 0 0; color:var(--muted); font-size:13.5px}
+.present-controls{display:flex; gap:8px; flex-wrap:wrap}
+.present-btn{border:1px solid var(--line); background:#fff; border-radius:999px; padding:9px 13px; font:inherit; font-size:12.5px; font-weight:800; color:var(--blue); cursor:pointer; transition:.18s ease}
+.present-btn:hover{border-color:var(--blue); transform:translateY(-1px)}
+.slide-stage{display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px}
+.stage-step{opacity:.24; filter:grayscale(.65); transform:translateY(4px); transition:.35s ease; border:1px solid var(--line); border-radius:22px; background:var(--soft); padding:18px; min-height:178px; position:relative; overflow:hidden}
+.stage-step.active{opacity:1; filter:grayscale(0); transform:translateY(0); background:#fff; box-shadow:0 14px 36px rgba(15,61,94,.10); border-color:#b8d1dc}
+.stage-step.revealed{opacity:1; filter:grayscale(0); transform:translateY(0)}
+.stage-step:before{content:attr(data-step); position:absolute; right:14px; top:10px; font-family:var(--serif); font-size:42px; font-weight:800; color:rgba(15,61,94,.08)}
+.stage-icon{width:54px; height:54px; border-radius:18px; background:var(--soft-2); border:1px solid var(--line); display:grid; place-items:center; color:var(--blue); margin-bottom:12px}
+.stage-icon svg{width:32px; height:32px; stroke:currentColor}
+.stage-step h5{font-size:16px; margin:0 0 6px; color:var(--ink)}
+.stage-step p{font-size:13.3px; color:var(--muted); line-height:1.5; margin:0}
+@media(max-width:980px){.slide-stage{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.present-head{display:block}.present-controls{margin-top:12px}.slide-stage{grid-template-columns:1fr}}
 .ecosystem{margin-top:24px; background:white; border:1px solid var(--line); border-radius:28px; padding:28px; overflow:hidden}
 .ecosystem-grid{display:grid; grid-template-columns:1fr 1.15fr 1fr; gap:18px; align-items:center}
 .eco-stack{display:grid; gap:14px}
@@ -295,6 +317,35 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
         <div class="profile-line"><span class="mini-icon">🌏</span><span><b>University of Sydney</b><br>Visiting Researcher, Biomedical Engineering</span></div>
         <div class="profile-line"><span class="mini-icon">🧠</span><span><b>Research focus</b><br>Dementia care, heart–brain–sleep axis, wearables, edge AI, translational imaging</span></div>
       </div>
+
+      <div class="avatar-scene" aria-label="Researcher avatar illustration">
+        <svg viewBox="0 0 520 330" role="img" aria-label="Researcher working on AI for healthcare">
+          <rect x="0" y="0" width="520" height="330" rx="28" fill="#ffffff"/>
+          <path d="M25 72C75 18 162 22 205 76C248 130 333 92 387 49C432 13 488 35 503 89" fill="none" stroke="#dbe5ea" stroke-width="18" stroke-linecap="round"/>
+          <circle cx="426" cy="82" r="24" fill="#e6f6f3"/>
+          <path d="M360 70h48M384 46v48" class="mono-line"/>
+          <rect x="56" y="214" width="408" height="16" rx="8" fill="#dbe5ea"/>
+          <rect x="94" y="105" width="154" height="110" rx="16" fill="#eef5f8" stroke="#dbe5ea"/>
+          <rect x="122" y="131" width="100" height="58" rx="8" fill="#0f3d5e" opacity=".92"/>
+          <path d="M137 160h21l8-18 14 36 8-18h18" fill="none" stroke="#8de1cf" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="335" cy="104" r="34" fill="#ffe2d4"/>
+          <path d="M305 96c8-34 48-43 72-17 3 12-2 24-10 31-11-16-34-19-62-14Z" fill="#10202b"/>
+          <circle cx="324" cy="106" r="3" fill="#10202b"/><circle cx="351" cy="106" r="3" fill="#10202b"/>
+          <path d="M326 126c9 7 21 7 30 0" class="mono-line"/>
+          <path d="M295 244c5-54 13-93 43-93h20c32 0 48 39 54 93" fill="#ffffff" stroke="#0f3d5e" stroke-width="4"/>
+          <path d="M318 165l27 28 31-28" fill="none" stroke="#1b8a7a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M257 224c26-22 52-24 79-10" class="mono-line"/>
+          <rect x="250" y="185" width="135" height="76" rx="10" fill="#15324a"/>
+          <rect x="268" y="198" width="99" height="42" rx="6" fill="#eaf4fa"/>
+          <path d="M282 219h18l6-13 10 25 7-12h26" fill="none" stroke="#1b8a7a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M408 244h42M56 244h170" class="mono-line"/>
+          <circle cx="68" cy="274" r="14" fill="#eaf4fa" stroke="#0f3d5e" stroke-width="3"/>
+          <path d="M62 274h12M68 268v12" class="mono-line"/>
+          <circle cx="448" cy="274" r="14" fill="#eef8f3" stroke="#1b8a7a" stroke-width="3"/>
+          <path d="M440 274h16M448 266v16" fill="none" stroke="#1b8a7a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <div class="avatar-caption">AI for healthcare, wearable sensing and translational medical imaging.</div>
+      </div>
     </aside>
   </div>
 </section>
@@ -330,6 +381,42 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
     <div class="visual-title">
       <h3>Research visualisation</h3>
       <p>My research follows a simple path: collect meaningful biomedical data, build efficient and privacy-aware AI models, and translate the outputs into dementia care, CVD risk prediction and treatment planning.</p>
+    </div>
+
+    <div class="present-box reveal" id="presentationMode">
+      <div class="present-head">
+        <div>
+          <h4>Presentation mode</h4>
+          <p>Click through the steps like a slide deck.</p>
+        </div>
+        <div class="present-controls">
+          <button class="present-btn" type="button" id="prevStep">Previous</button>
+          <button class="present-btn" type="button" id="nextStep">Next step</button>
+          <button class="present-btn" type="button" id="showAllSteps">Show all</button>
+        </div>
+      </div>
+      <div class="slide-stage">
+        <div class="stage-step active" data-step="01">
+          <div class="stage-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 12h3l2-6 4 12 2-6h3"/><path d="M4 19h16"/></svg></div>
+          <h5>Biomedical data</h5>
+          <p>I start from multimodal signals, images and clinical variables: ECG, PPG, EEG, MRI, CT, PET and wearable streams.</p>
+        </div>
+        <div class="stage-step" data-step="02">
+          <div class="stage-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 18c-4-1-6-4-6-8a6 6 0 0 1 11-3 5 5 0 0 1 7 5c0 4-3 6-7 6"/><path d="M12 8v8M8 12h8"/></svg></div>
+          <h5>Efficient AI</h5>
+          <p>I build lightweight, explainable and privacy-aware models using CNNs, ensembles, transfer learning and federated learning.</p>
+        </div>
+        <div class="stage-step" data-step="03">
+          <div class="stage-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M4 12h16M12 4c2.8 3.3 2.8 12.7 0 16M12 4c-2.8 3.3-2.8 12.7 0 16"/></svg></div>
+          <h5>Edge and federation</h5>
+          <p>The models are designed for edge–cloud deployment and multi-site learning where sensitive data should not move unnecessarily.</p>
+        </div>
+        <div class="stage-step" data-step="04">
+          <div class="stage-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 20V8M12 20V4M18 20v-9"/><path d="M4 20h16"/></svg></div>
+          <h5>Clinical translation</h5>
+          <p>The output is risk prediction, monitoring, treatment support and dashboards for dementia care and cardiovascular risk.</p>
+        </div>
+      </div>
     </div>
 
     <div class="ecosystem">
@@ -501,6 +588,19 @@ footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; le
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+const stageSteps = Array.from(document.querySelectorAll('.stage-step'));
+let stageIndex = 0;
+function updateStage(index){
+  stageIndex = Math.max(0, Math.min(index, stageSteps.length - 1));
+  stageSteps.forEach((step, i) => {
+    step.classList.toggle('active', i === stageIndex);
+    step.classList.toggle('revealed', i < stageIndex);
+  });
+}
+document.getElementById('nextStep')?.addEventListener('click', () => updateStage(stageIndex + 1));
+document.getElementById('prevStep')?.addEventListener('click', () => updateStage(stageIndex - 1));
+document.getElementById('showAllSteps')?.addEventListener('click', () => stageSteps.forEach(step => step.classList.add('active','revealed')));
+
 const tabs = document.querySelectorAll('.tab');
 const pubs = document.querySelectorAll('.pub');
 const search = document.getElementById('pubSearch');
