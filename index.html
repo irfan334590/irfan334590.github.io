@@ -3,38 +3,41 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dr. Muhammad Irfan — AI for Healthcare, Wearables & Translational Imaging</title>
-<meta name="description" content="Dr. Muhammad Irfan — Senior Researcher and PI in AI for healthcare, wearable physiological sensing, dementia care, cardiovascular risk, edge AI, federated learning, and translational medical imaging." />
-<meta name="author" content="Muhammad Irfan (PhD, PhD)" />
-<meta name="theme-color" content="#143d35" />
+<title>Muhammad Irfan (PhD, PhD) — AI for Healthcare, Wearables & Translational Imaging</title>
+<meta name="description" content="Muhammad Irfan (PhD, PhD) — Senior Researcher and PI in AI for healthcare, wearable physiological sensing, dementia care, cardiovascular risk, edge AI, federated learning, and translational medical imaging." />
+<meta name="author" content="Muhammad Irfan" />
+<meta name="theme-color" content="#0f3d5e" />
 
-<meta property="og:title" content="Dr. Muhammad Irfan — AI for Healthcare Researcher" />
+<meta property="og:title" content="Muhammad Irfan (PhD, PhD) — AI for Healthcare Researcher" />
 <meta property="og:description" content="Senior Researcher and PI working on AI for dementia care, cardiovascular risk, wearable sensing, edge AI, federated learning, and translational medical imaging." />
 <meta property="og:type" content="profile" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=DM+Sans:opsz,wght@9..40,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400..800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#f4efe3;
-  --paper:#fffaf0;
-  --paper-2:#f8f1e3;
-  --ink:#191b17;
-  --muted:#5f6058;
-  --soft:#8c887e;
-  --line:rgba(25,27,23,.14);
-  --line-soft:rgba(25,27,23,.075);
-  --green:#143d35;
-  --green-2:#286d58;
-  --green-3:#dce9df;
-  --orange:#bf6438;
-  --gold:#d4a64a;
-  --blue:#284f7a;
-  --shadow:0 24px 80px rgba(35,31,24,.12);
-  --serif:"Fraunces", Georgia, serif;
-  --sans:"DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --bg:#ffffff;
+  --surface:#ffffff;
+  --soft:#f5f8fb;
+  --soft-2:#eef5f8;
+  --ink:#10202b;
+  --muted:#526371;
+  --faint:#82919c;
+  --line:#dbe5ea;
+  --line-soft:#edf3f6;
+  --blue:#0f3d5e;
+  --blue-2:#176b95;
+  --teal:#1b8a7a;
+  --green:#2e8b57;
+  --orange:#d36b32;
+  --purple:#6b5bd6;
+  --gold:#b88724;
+  --shadow:0 18px 55px rgba(15,61,94,.12);
+  --shadow-soft:0 12px 32px rgba(16,32,43,.07);
+  --serif:"Source Serif 4", Georgia, serif;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   --max:1240px;
   --gutter:clamp(20px,5vw,64px);
 }
@@ -42,217 +45,215 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  background:
-    radial-gradient(900px 420px at 90% -8%, rgba(20,61,53,.16), transparent 62%),
-    radial-gradient(850px 520px at 0% 30%, rgba(191,100,56,.10), transparent 60%),
-    linear-gradient(180deg, #f7f1e6 0%, var(--bg) 48%, #efe6d4 100%);
+  background:var(--bg);
   color:var(--ink);
   font-family:var(--sans);
   font-size:16px;
-  line-height:1.6;
+  line-height:1.65;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
-::selection{background:var(--green); color:var(--paper)}
+::selection{background:var(--blue); color:white}
 a{color:inherit; text-decoration:none}
 .wrap{max-width:var(--max); margin:0 auto; padding:0 var(--gutter)}
-.eyebrow{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--soft); font-weight:700}
 .link{border-bottom:1px solid var(--line); transition:.2s ease}
-.link:hover{color:var(--green-2); border-color:var(--green-2)}
+.link:hover{color:var(--blue-2); border-color:var(--blue-2)}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-2); font-weight:800}
 
 .top{
-  position:sticky; top:0; z-index:40;
-  backdrop-filter:blur(18px) saturate(150%);
-  -webkit-backdrop-filter:blur(18px) saturate(150%);
-  background:rgba(244,239,227,.82);
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(16px) saturate(150%);
+  -webkit-backdrop-filter:blur(16px) saturate(150%);
   border-bottom:1px solid var(--line-soft);
 }
-.top-inner{display:flex; align-items:center; justify-content:space-between; gap:24px; padding:14px 0}
-.brand{font-family:var(--serif); font-size:18px; font-weight:520; letter-spacing:-.02em}
-.brand-dot{display:inline-block; width:8px; height:8px; margin-right:9px; border-radius:50%; background:var(--green); transform:translateY(-2px)}
-.nav{display:flex; gap:22px; align-items:center; flex-wrap:wrap}
-.nav a{font-size:13px; color:var(--muted); transition:.15s ease}
-.nav a:hover{color:var(--green)}
-.nav .nav-pill{border:1px solid var(--line); border-radius:999px; padding:7px 12px; color:var(--ink)}
-.nav .nav-pill:hover{border-color:var(--green)}
-@media(max-width:820px){.nav{display:none}}
+.top-inner{display:flex; justify-content:space-between; align-items:center; gap:24px; padding:14px 0}
+.brand{display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:-.02em; color:var(--blue)}
+.brand-mark{width:34px; height:34px; border-radius:12px; background:linear-gradient(135deg,var(--blue),var(--teal)); color:white; display:grid; place-items:center; font-weight:800; font-size:13px; box-shadow:0 8px 22px rgba(15,61,94,.2)}
+.nav{display:flex; gap:20px; align-items:center; flex-wrap:wrap}
+.nav a{font-size:13px; color:var(--muted); font-weight:600; transition:.15s ease}
+.nav a:hover{color:var(--blue)}
+.nav-pill{border:1px solid var(--line); padding:8px 13px; border-radius:999px; color:var(--ink)!important; background:white}
+.nav-pill:hover{border-color:var(--blue); color:var(--blue)!important}
+@media(max-width:860px){.nav{display:none}}
 
-.hero{position:relative; padding:clamp(62px,9vw,125px) 0 54px; overflow:hidden}
-.hero-grid{display:grid; grid-template-columns:minmax(0,1.08fr) 390px; gap:clamp(32px,6vw,88px); align-items:start}
-@media(max-width:980px){.hero-grid{grid-template-columns:1fr}}
-.hero-kicker{display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:25px}
-.status{display:inline-flex; align-items:center; gap:8px; color:var(--green); font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:700}
-.status-dot{width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 0 0 rgba(20,61,53,.55); animation:pulse 2.3s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(20,61,53,0)}}
-h1{font-family:var(--serif); font-weight:360; font-variation-settings:"opsz" 144,"SOFT" 35,"WONK" 1; font-size:clamp(54px,9vw,132px); line-height:.91; letter-spacing:-.045em; margin:0 0 28px}
-h1 em{font-style:italic; color:var(--green)}
-.hero-thesis{font-family:var(--serif); font-size:clamp(24px,3vw,40px); line-height:1.14; letter-spacing:-.025em; font-weight:390; max-width:920px; margin:0 0 24px}
-.hero-thesis .mark{color:var(--green); font-style:italic}
-.hero-summary{max-width:72ch; color:var(--muted); font-size:17px; line-height:1.78; margin:0}
-.hero-actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:34px}
-.btn{display:inline-flex; align-items:center; gap:9px; border:1px solid var(--line); border-radius:999px; padding:11px 17px; font-size:13px; font-weight:650; transition:.2s ease; background:rgba(255,250,240,.45)}
-.btn:hover{transform:translateY(-2px); border-color:var(--green); color:var(--green); box-shadow:0 10px 30px rgba(20,61,53,.08)}
-.btn.primary{background:var(--ink); color:var(--paper); border-color:var(--ink)}
-.btn.primary:hover{background:var(--green); color:var(--paper); border-color:var(--green)}
+.hero{position:relative; overflow:hidden; padding:clamp(64px,8vw,112px) 0 62px; border-bottom:1px solid var(--line-soft)}
+.hero:before{content:""; position:absolute; inset:0; background:
+  radial-gradient(900px 300px at 86% 12%, rgba(23,107,149,.12), transparent 62%),
+  radial-gradient(700px 320px at 8% 10%, rgba(27,138,122,.09), transparent 64%);
+  pointer-events:none}
+.hero-grid{position:relative; display:grid; grid-template-columns:minmax(0,1.08fr) 420px; gap:clamp(34px,6vw,86px); align-items:center}
+@media(max-width:1020px){.hero-grid{grid-template-columns:1fr}}
+.hero-kicker{display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:22px}
+.status{display:inline-flex; align-items:center; gap:8px; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--teal); font-weight:800}
+.status-dot{width:8px; height:8px; border-radius:50%; background:var(--teal); box-shadow:0 0 0 0 rgba(27,138,122,.55); animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(27,138,122,0)}}
+h1{font-family:var(--serif); font-size:clamp(48px,7.8vw,104px); line-height:.98; letter-spacing:-.045em; font-weight:700; margin:0 0 22px; color:var(--ink)}
+h1 span{display:block; color:var(--blue)}
+.hero-thesis{font-size:clamp(21px,2.45vw,34px); line-height:1.24; letter-spacing:-.025em; font-weight:650; max-width:860px; margin:0 0 20px; color:#1b3444}
+.hero-thesis em{font-family:var(--serif); font-style:italic; color:var(--teal); font-weight:700}
+.hero-summary{max-width:76ch; color:var(--muted); font-size:17px; line-height:1.78; margin:0}
+.actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:30px}
+.btn{display:inline-flex; align-items:center; gap:9px; border:1px solid var(--line); border-radius:999px; padding:12px 17px; font-size:13px; font-weight:750; background:white; transition:.2s ease; box-shadow:0 5px 16px rgba(16,32,43,.04)}
+.btn:hover{transform:translateY(-2px); border-color:var(--blue-2); color:var(--blue-2); box-shadow:0 14px 32px rgba(15,61,94,.12)}
+.btn.primary{background:var(--blue); color:white; border-color:var(--blue)}
+.btn.primary:hover{background:var(--blue-2); border-color:var(--blue-2); color:white}
 .arrow{transition:.2s ease}.btn:hover .arrow{transform:translateX(3px)}
 
-.profile-card{background:rgba(255,250,240,.74); border:1px solid var(--line-soft); box-shadow:var(--shadow); border-radius:28px; padding:24px; position:relative; overflow:hidden}
-.profile-card:before{content:""; position:absolute; inset:0; background:radial-gradient(380px 180px at 80% 0%, rgba(40,109,88,.16), transparent 65%); pointer-events:none}
-.portrait{position:relative; aspect-ratio:1/1.05; border-radius:22px; background:linear-gradient(135deg,var(--green-3),#f7e6d0); border:1px solid var(--line-soft); display:grid; place-items:center; overflow:hidden; margin-bottom:18px}
-.portrait .initials{font-family:var(--serif); font-size:96px; color:var(--green); font-style:italic; opacity:.88}
-.portrait-note{position:absolute; left:14px; bottom:14px; right:14px; background:rgba(25,27,23,.78); color:var(--paper); border-radius:16px; padding:12px 14px; font-size:12px; line-height:1.45}
-.affiliation-list{position:relative; display:grid; gap:10px; margin-top:14px}
-.affiliation{display:flex; gap:10px; align-items:flex-start; padding:12px 0; border-top:1px solid var(--line-soft); font-size:13.5px; color:var(--muted)}
-.affiliation b{color:var(--ink)}
-.pin{width:8px; height:8px; border-radius:50%; margin-top:7px; background:var(--green); flex:0 0 auto}
+.profile-card{background:white; border:1px solid var(--line); border-radius:30px; box-shadow:var(--shadow); padding:20px; position:relative; overflow:hidden}
+.profile-card:before{content:""; position:absolute; inset:0; background:linear-gradient(135deg, rgba(23,107,149,.08), transparent 45%, rgba(27,138,122,.08)); pointer-events:none}
+.portrait{position:relative; aspect-ratio:1/1.05; border-radius:24px; overflow:hidden; background:linear-gradient(135deg,#e9f3f7,#eff8f3); display:grid; place-items:center; border:1px solid var(--line-soft)}
+.portrait svg{width:82%; height:82%}
+.profile-img{width:100%; height:100%; object-fit:cover; display:block}
+.portrait-note{position:absolute; left:14px; right:14px; bottom:14px; background:rgba(16,32,43,.82); color:white; padding:12px 14px; border-radius:16px; font-size:12px; line-height:1.42}
+.profile-lines{position:relative; display:grid; gap:0; margin-top:15px}
+.profile-line{display:grid; grid-template-columns:24px 1fr; gap:10px; padding:12px 2px; border-top:1px solid var(--line-soft); font-size:13.5px; color:var(--muted)}
+.profile-line b{color:var(--ink)}
+.icon-dot{width:16px; height:16px; border-radius:7px; background:var(--soft-2); border:1px solid var(--line); margin-top:4px; position:relative}
+.icon-dot:after{content:""; position:absolute; inset:4px; border-radius:50%; background:var(--blue-2)}
 
-.impact-strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(236,226,207,.76)}
-.impact-grid{display:grid; grid-template-columns:repeat(5,1fr)}
-@media(max-width:900px){.impact-grid{grid-template-columns:repeat(2,1fr)}.impact-grid .impact:last-child{grid-column:1/-1}}
-.impact{padding:28px 22px; border-right:1px solid var(--line-soft)}
-.impact:last-child{border-right:0}
-.impact .num{font-family:var(--serif); font-size:clamp(36px,4.8vw,58px); line-height:1; font-weight:400; letter-spacing:-.035em}
-.impact .num span{font-size:.5em; color:var(--green)}
-.impact .label{margin-top:10px; color:var(--muted); font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:700}
+.stats{background:white; border-bottom:1px solid var(--line-soft)}
+.stats-grid{display:grid; grid-template-columns:repeat(5,1fr); border-left:1px solid var(--line-soft)}
+@media(max-width:940px){.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}}
+.stat{padding:28px 22px; border-right:1px solid var(--line-soft)}
+.stat .num{font-family:var(--serif); font-size:clamp(36px,4.7vw,58px); line-height:1; font-weight:800; color:var(--blue); letter-spacing:-.04em}
+.stat .num span{font-size:.48em; color:var(--teal)}
+.stat .label{margin-top:9px; font-size:12px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:800}
 
-.section{padding:clamp(62px,8.5vw,105px) 0; border-bottom:1px solid var(--line)}
-.section-head{display:grid; grid-template-columns:100px 1fr; gap:22px; align-items:baseline; margin-bottom:48px}
-.section-num{font-family:var(--serif); font-style:italic; color:var(--green); font-size:21px}
-h2{font-family:var(--serif); font-size:clamp(34px,4.7vw,62px); line-height:1.02; font-weight:380; letter-spacing:-.035em; margin:0}
-h2 em{color:var(--green); font-style:italic}
-@media(max-width:620px){.section-head{grid-template-columns:1fr; gap:8px}}
+.section{padding:clamp(66px,8vw,104px) 0; border-bottom:1px solid var(--line-soft)}
+.section-head{display:grid; grid-template-columns:92px 1fr; gap:24px; align-items:baseline; margin-bottom:44px}
+.section-num{font-family:var(--serif); color:var(--blue-2); font-style:italic; font-size:22px; font-weight:700}
+h2{font-family:var(--serif); font-size:clamp(34px,4.5vw,60px); line-height:1.05; letter-spacing:-.035em; font-weight:750; margin:0; color:var(--ink)}
+h2 em{color:var(--teal); font-style:italic}
+@media(max-width:650px){.section-head{grid-template-columns:1fr; gap:8px}}
 
-.story-grid{display:grid; grid-template-columns:1fr 1fr; gap:42px}
-@media(max-width:900px){.story-grid{grid-template-columns:1fr}}
-.story-card{background:var(--paper); border:1px solid var(--line-soft); border-radius:24px; padding:30px; box-shadow:0 16px 50px rgba(35,31,24,.06)}
-.story-card p{color:var(--muted); margin:0 0 16px; line-height:1.75}
-.thesis-box{background:var(--green); color:var(--paper); border-radius:24px; padding:32px; position:relative; overflow:hidden}
-.thesis-box:after{content:""; position:absolute; width:220px; height:220px; right:-70px; top:-80px; border-radius:50%; background:rgba(212,166,74,.18)}
-.thesis-box h3{font-family:var(--serif); font-size:30px; line-height:1.1; font-weight:390; letter-spacing:-.02em; margin:0 0 18px}
-.thesis-box p{opacity:.84; margin:0; line-height:1.7}
+.split{display:grid; grid-template-columns:1fr 1fr; gap:34px}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.card{background:white; border:1px solid var(--line); border-radius:26px; box-shadow:var(--shadow-soft); padding:30px}
+.card p{color:var(--muted); margin:0 0 15px; line-height:1.75}
+.card p:last-child{margin-bottom:0}
+.highlight-card{background:linear-gradient(135deg,var(--blue),#145b82); color:white; border-radius:26px; padding:32px; box-shadow:var(--shadow); position:relative; overflow:hidden}
+.highlight-card:after{content:""; position:absolute; width:250px; height:250px; border-radius:50%; right:-92px; top:-90px; background:rgba(255,255,255,.1)}
+.highlight-card h3{position:relative; font-family:var(--serif); font-size:32px; line-height:1.08; margin:0 0 16px; font-weight:720; letter-spacing:-.025em}
+.highlight-card p{position:relative; color:rgba(255,255,255,.84); line-height:1.74; margin:0}
 
-.map-wrap{margin-top:40px; background:rgba(255,250,240,.62); border:1px solid var(--line-soft); border-radius:28px; padding:28px; overflow:hidden}
-.map-title{display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:20px}
-.map-title h3{font-family:var(--serif); font-size:27px; margin:0; font-weight:430; letter-spacing:-.02em}
-.map-title p{margin:0; color:var(--muted); font-size:14px; max-width:52ch}
-@media(max-width:780px){.map-title{display:block}.map-title p{margin-top:8px}}
-.research-map{display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; align-items:stretch}
-@media(max-width:900px){.research-map{grid-template-columns:1fr}}
-.map-node{background:var(--paper); border:1px solid var(--line-soft); border-radius:22px; padding:22px; min-height:158px; position:relative; overflow:hidden}
-.map-node:before{content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--green)}
-.map-node.orange:before{background:var(--orange)}
-.map-node.blue:before{background:var(--blue)}
-.map-node.gold:before{background:var(--gold)}
-.map-node h4{font-family:var(--serif); font-size:22px; margin:0 0 8px; font-weight:450}
-.map-node p{margin:0; color:var(--muted); font-size:14px; line-height:1.62}
-.bridge{grid-column:1/-1; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:4px}
-@media(max-width:900px){.bridge{grid-template-columns:1fr}}
-.bridge-step{border:1px dashed rgba(20,61,53,.35); border-radius:18px; padding:16px; background:rgba(220,233,223,.38); font-size:13.5px; color:var(--muted)}
-.bridge-step b{display:block; color:var(--green); margin-bottom:4px}
+.visual-panel{margin-top:38px; background:var(--soft); border:1px solid var(--line); border-radius:30px; padding:30px; box-shadow:var(--shadow-soft)}
+.visual-title{display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom:24px}
+.visual-title h3{font-family:var(--serif); font-size:30px; letter-spacing:-.025em; margin:0; color:var(--blue); font-weight:760}
+.visual-title p{margin:0; color:var(--muted); font-size:14px; max-width:58ch}
+@media(max-width:760px){.visual-title{display:block}.visual-title p{margin-top:8px}}
+.pipeline{display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; align-items:stretch}
+@media(max-width:900px){.pipeline{grid-template-columns:1fr}}
+.v-card{background:white; border:1px solid var(--line); border-radius:24px; padding:22px; min-height:190px; position:relative; overflow:hidden}
+.v-card:before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:var(--blue)}
+.v-card.teal:before{background:var(--teal)}.v-card.orange:before{background:var(--orange)}.v-card.green:before{background:var(--green)}.v-card.purple:before{background:var(--purple)}.v-card.gold:before{background:var(--gold)}
+.v-icon{width:52px; height:52px; margin-bottom:15px}
+.v-card h4{font-family:var(--serif); font-size:23px; line-height:1.12; margin:0 0 9px; color:var(--ink)}
+.v-card p{margin:0; color:var(--muted); font-size:14px; line-height:1.62}
+.flow{grid-column:1/-1; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:4px}
+@media(max-width:900px){.flow{grid-template-columns:1fr}}
+.flow-step{background:white; border:1px dashed rgba(23,107,149,.42); border-radius:18px; padding:16px; color:var(--muted); font-size:13.5px}
+.flow-step b{display:block; color:var(--blue); margin-bottom:4px}
 
-.roles{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:26px; overflow:hidden}
+.roles{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 @media(max-width:850px){.roles{grid-template-columns:1fr}}
-.role-card{background:var(--paper); padding:30px; transition:.2s ease}
-.role-card:hover{background:#fbf2df}
-.date{color:var(--green); font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:800; margin-bottom:12px}
-.role-card h3{font-family:var(--serif); font-size:24px; line-height:1.18; font-weight:460; letter-spacing:-.015em; margin:0 0 7px}
-.org{font-size:13.5px; color:var(--muted); font-style:italic; margin-bottom:16px}
-.role-card p{font-size:14.5px; color:var(--muted); margin:0; line-height:1.65}
+.role{background:white; border:1px solid var(--line); border-radius:24px; padding:28px; box-shadow:var(--shadow-soft); position:relative; overflow:hidden}
+.role:before{content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--blue)}
+.role:nth-child(2):before{background:var(--teal)}.role:nth-child(3):before{background:var(--orange)}.role:nth-child(4):before{background:var(--purple)}
+.date{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-2); font-weight:800; margin-bottom:12px}
+.role h3{font-family:var(--serif); margin:0 0 6px; font-size:25px; line-height:1.18; letter-spacing:-.02em}
+.org{font-size:13.5px; color:var(--muted); font-style:italic; margin-bottom:14px}
+.role p{color:var(--muted); font-size:14.5px; margin:0; line-height:1.66}
 .badges{display:flex; flex-wrap:wrap; gap:7px; margin-top:16px}
-.badge{font-size:11px; letter-spacing:.1em; text-transform:uppercase; padding:5px 9px; border-radius:999px; background:var(--green-3); color:var(--green); font-weight:800}
-.badge.orange{background:#f4dfd2; color:var(--orange)}
+.badge{font-size:11px; text-transform:uppercase; letter-spacing:.1em; padding:5px 9px; border-radius:999px; background:var(--soft-2); color:var(--blue); font-weight:850}
 
-.timeline{position:relative; display:grid; gap:0}
+.timeline{display:grid; gap:0}
 .timeline-row{display:grid; grid-template-columns:210px 1fr; gap:38px; padding:28px 0; border-top:1px solid var(--line)}
 .timeline-row:last-child{border-bottom:1px solid var(--line)}
+.timeline-row .year{font-family:var(--serif); color:var(--blue-2); font-style:italic; font-weight:760; font-size:22px}
+.timeline-row h3{font-family:var(--serif); font-size:24px; line-height:1.15; margin:0 0 6px; letter-spacing:-.015em}
+.timeline-row .where{color:var(--muted); font-style:italic; margin-bottom:8px; font-size:14px}
+.timeline-row .desc{color:var(--muted); max-width:80ch; font-size:14.5px; line-height:1.68}
 @media(max-width:720px){.timeline-row{grid-template-columns:1fr; gap:8px}}
-.timeline-row .year{font-family:var(--serif); font-size:22px; color:var(--green); font-style:italic}
-.timeline-row h3{font-family:var(--serif); margin:0 0 5px; font-size:23px; font-weight:460; letter-spacing:-.01em}
-.timeline-row .where{color:var(--muted); font-style:italic; margin-bottom:9px; font-size:14px}
-.timeline-row .desc{color:var(--muted); max-width:78ch; font-size:14.5px; line-height:1.65}
 
-.pub-tools{display:flex; justify-content:space-between; gap:18px; align-items:center; flex-wrap:wrap; margin-bottom:26px}
+.pub-tools{display:flex; justify-content:space-between; gap:18px; align-items:center; flex-wrap:wrap; margin-bottom:24px}
 .tabs{display:flex; gap:8px; flex-wrap:wrap}
-.tab{border:1px solid var(--line); border-radius:999px; padding:8px 14px; background:transparent; font:inherit; font-size:12.5px; color:var(--muted); cursor:pointer; font-weight:700; transition:.15s ease}
-.tab:hover{border-color:var(--green); color:var(--green)}
-.tab.active{background:var(--ink); color:var(--paper); border-color:var(--ink)}
-.search{border:1px solid var(--line); border-radius:999px; background:rgba(255,250,240,.7); padding:10px 14px; min-width:min(310px,100%); font-family:var(--sans); color:var(--ink); outline:none}
-.search:focus{border-color:var(--green); box-shadow:0 0 0 4px rgba(20,61,53,.08)}
-.pubs{display:grid; gap:0}
-.pub{display:grid; grid-template-columns:52px 1fr 118px; gap:18px; padding:21px 0; border-top:1px solid var(--line); align-items:start}
-.pub:last-child{border-bottom:1px solid var(--line)}
-.pub:hover{background:rgba(20,61,53,.028)}
-@media(max-width:720px){.pub{grid-template-columns:38px 1fr}.pub .metric{grid-column:2; text-align:left}}
-.idx{font-family:var(--serif); font-style:italic; color:var(--soft); font-size:14px; padding-top:2px}
-.pub h3{font-family:var(--serif); margin:0 0 6px; font-size:17px; line-height:1.35; font-weight:470; letter-spacing:-.005em}
+.tab{border:1px solid var(--line); border-radius:999px; padding:8px 13px; background:white; font:inherit; font-size:12.5px; color:var(--muted); cursor:pointer; font-weight:750; transition:.15s ease}
+.tab:hover{border-color:var(--blue); color:var(--blue)}
+.tab.active{background:var(--blue); color:white; border-color:var(--blue)}
+.search{border:1px solid var(--line); border-radius:999px; padding:10px 14px; min-width:min(310px,100%); outline:none; font-family:var(--sans); color:var(--ink); background:white}
+.search:focus{border-color:var(--blue-2); box-shadow:0 0 0 4px rgba(23,107,149,.1)}
+.pubs{display:grid; gap:12px}
+.pub{display:grid; grid-template-columns:54px 1fr 120px; gap:18px; padding:20px; border:1px solid var(--line); border-radius:20px; background:white; box-shadow:0 8px 24px rgba(16,32,43,.045); align-items:start; transition:.18s ease}
+.pub:hover{transform:translateY(-2px); border-color:#b8d1dc; box-shadow:var(--shadow-soft)}
+@media(max-width:720px){.pub{grid-template-columns:38px 1fr}.metric{grid-column:2; text-align:left!important}}
+.idx{font-family:var(--serif); color:var(--blue-2); font-style:italic; font-weight:750; padding-top:1px}
+.pub h3{font-family:var(--serif); font-size:17px; line-height:1.36; margin:0 0 6px; letter-spacing:-.005em}
 .authors{font-size:13.5px; color:var(--muted); margin-bottom:3px}.authors strong{color:var(--ink)}
-.venue{font-size:13px; color:var(--muted); font-style:italic}.venue .yr{color:var(--green); font-style:normal; font-weight:800}
-.metric{text-align:right; font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--soft)}
-.metric strong{display:block; font-family:var(--serif); font-size:20px; font-style:italic; color:var(--green); text-transform:none; letter-spacing:0; line-height:1.1}
-.tag{display:inline-block; font-size:10px; letter-spacing:.1em; text-transform:uppercase; background:var(--orange); color:var(--paper); border-radius:5px; padding:2px 7px; margin-left:6px; font-weight:800; vertical-align:middle}
-.tag.gray{background:var(--soft)}
-.hidden{display:none!important}
+.venue{font-size:13px; color:var(--muted); font-style:italic}.venue .yr{color:var(--blue-2); font-style:normal; font-weight:850}
+.metric{text-align:right; color:var(--faint); font-size:11px; text-transform:uppercase; letter-spacing:.1em; font-weight:750}
+.metric strong{display:block; font-family:var(--serif); font-size:20px; color:var(--teal); font-style:italic; text-transform:none; letter-spacing:0; line-height:1.1}
+.tag{display:inline-block; margin-left:6px; padding:2px 7px; border-radius:6px; background:var(--orange); color:white; font-size:10px; text-transform:uppercase; letter-spacing:.1em; font-weight:850; vertical-align:middle}.tag.gray{background:var(--faint)}.hidden{display:none!important}
 
-.funding-grid{display:grid; grid-template-columns:1.2fr .85fr; gap:42px; align-items:start}
+.funding-grid{display:grid; grid-template-columns:1.2fr .86fr; gap:34px; align-items:start}
 @media(max-width:930px){.funding-grid{grid-template-columns:1fr}}
 .grant{display:grid; grid-template-columns:110px 1fr; gap:18px; padding:21px 0; border-top:1px solid var(--line)}
 .grant:last-child{border-bottom:1px solid var(--line)}
+.grant .year{font-family:var(--serif); color:var(--blue-2); font-style:italic; font-weight:760}
+.grant h3{font-family:var(--serif); margin:0 0 4px; font-size:19px; letter-spacing:-.01em}
+.grant p{margin:0; color:var(--muted); font-size:13.8px; line-height:1.58}.grant b{color:var(--ink)}
 @media(max-width:620px){.grant{grid-template-columns:1fr; gap:5px}}
-.grant .year{font-family:var(--serif); color:var(--green); font-style:italic}
-.grant h3{font-family:var(--serif); margin:0 0 4px; font-size:18px; font-weight:470}
-.grant p{margin:0; color:var(--muted); font-size:13.8px; line-height:1.56}.grant b{color:var(--ink)}
-.fund-panel{background:var(--ink); color:var(--paper); border-radius:28px; padding:34px; position:sticky; top:86px; overflow:hidden}
-.fund-panel:before{content:""; position:absolute; width:260px; height:260px; border-radius:50%; right:-90px; top:-90px; background:rgba(212,166,74,.17)}
-.fund-panel .big{font-family:var(--serif); font-size:66px; line-height:.9; letter-spacing:-.04em; font-weight:350; position:relative}
-.fund-panel .label{font-size:12px; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,250,240,.68); font-weight:800; margin:10px 0 24px; position:relative}
-.panel-row{display:flex; justify-content:space-between; gap:16px; padding:13px 0; border-top:1px solid rgba(255,250,240,.14); font-size:14px; position:relative}.panel-row span:last-child{font-family:var(--serif); color:#94c5ac; font-style:italic}
+.fund-panel{background:linear-gradient(135deg,var(--blue),#15324a); color:white; border-radius:28px; padding:34px; box-shadow:var(--shadow); position:sticky; top:86px; overflow:hidden}
+.fund-panel:after{content:""; position:absolute; width:260px; height:260px; border-radius:50%; right:-90px; top:-90px; background:rgba(255,255,255,.1)}
+.fund-panel .big{font-family:var(--serif); font-size:68px; line-height:.9; letter-spacing:-.045em; font-weight:800; position:relative}
+.fund-panel .label{font-size:12px; letter-spacing:.15em; text-transform:uppercase; color:rgba(255,255,255,.7); font-weight:850; margin:10px 0 24px; position:relative}
+.panel-row{display:flex; justify-content:space-between; gap:16px; padding:13px 0; border-top:1px solid rgba(255,255,255,.16); font-size:14px; position:relative}.panel-row span:last-child{font-family:var(--serif); color:#8de1cf; font-weight:800; font-style:italic}
 
 .output-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
 @media(max-width:900px){.output-grid{grid-template-columns:1fr}}
-.output-card{background:var(--paper); border:1px solid var(--line-soft); border-radius:24px; padding:24px; min-height:210px; box-shadow:0 14px 44px rgba(35,31,24,.05)}
-.output-card h3{font-family:var(--serif); margin:0 0 12px; font-size:23px; font-weight:460}
-.output-card ul{list-style:none; padding:0; margin:0}.output-card li{padding:9px 0; border-top:1px solid var(--line-soft); color:var(--muted); font-size:14px}.output-card li:first-child{border-top:0}
+.output-card{background:white; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow:var(--shadow-soft)}
+.output-card h3{font-family:var(--serif); font-size:24px; margin:0 0 12px; letter-spacing:-.015em}.output-card ul{list-style:none; padding:0; margin:0}.output-card li{padding:10px 0; border-top:1px solid var(--line-soft); color:var(--muted); font-size:14px}.output-card li:first-child{border-top:0}
 
-.awards{display:flex; flex-wrap:wrap; gap:10px}.award{border:1px solid var(--line); background:var(--paper); border-radius:12px; padding:13px 16px; font-size:13.5px; transition:.2s ease}.award:hover{transform:translateY(-2px); border-color:var(--green)}.award .yr{font-family:var(--serif); color:var(--green); font-style:italic; margin-right:7px}.award.star{background:var(--green); color:var(--paper); border-color:var(--green)}.award.star .yr{color:#c7dfd1}
+.awards{display:flex; flex-wrap:wrap; gap:10px}.award{background:white; border:1px solid var(--line); border-radius:14px; padding:13px 16px; font-size:13.5px; box-shadow:0 6px 18px rgba(16,32,43,.04); transition:.18s ease}.award:hover{transform:translateY(-2px); border-color:var(--blue-2)}.award .yr{font-family:var(--serif); color:var(--blue-2); font-style:italic; font-weight:760; margin-right:7px}.award.star{background:var(--blue); color:white; border-color:var(--blue)}.award.star .yr{color:#a9d9ea}
 
-.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:50px}@media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
-.contact-title{font-family:var(--serif); font-size:clamp(40px,5vw,68px); line-height:1; letter-spacing:-.035em; font-weight:380; margin:0 0 22px}.contact-title em{color:var(--green)}
-.contact-lines{display:grid; gap:0; margin-top:24px}.contact-line{display:grid; grid-template-columns:105px 1fr; gap:18px; padding:12px 0; border-top:1px solid var(--line-soft); font-size:14.5px}.contact-line .k{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--soft); font-weight:800}.contact-line .v{color:var(--ink)}
-.refs{background:rgba(255,250,240,.58); border:1px solid var(--line-soft); border-radius:24px; padding:28px}.refs h3{font-family:var(--serif); margin:0 0 14px; font-size:25px; font-style:italic; font-weight:400}.ref{padding:13px 0; border-top:1px solid var(--line-soft); font-size:13.7px}.ref .name{font-weight:800}.ref .title{color:var(--muted); margin-top:3px; line-height:1.45}
-footer{padding:38px 0; text-align:center; color:var(--soft); font-size:12px; letter-spacing:.05em}.dotsep{margin:0 8px; color:var(--green)}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:42px}@media(max-width:850px){.contact-grid{grid-template-columns:1fr}}
+.contact-title{font-family:var(--serif); font-size:clamp(42px,5vw,68px); line-height:1; letter-spacing:-.04em; margin:0 0 20px; font-weight:760}.contact-title em{color:var(--teal)}
+.contact-lines{display:grid; gap:0; margin-top:24px}.contact-line{display:grid; grid-template-columns:105px 1fr; gap:18px; padding:12px 0; border-top:1px solid var(--line-soft); font-size:14.5px}.contact-line .k{font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--faint); font-weight:850}.contact-line .v{color:var(--ink)}
+.refs{background:var(--soft); border:1px solid var(--line); border-radius:24px; padding:28px; box-shadow:var(--shadow-soft)}.refs h3{font-family:var(--serif); font-size:25px; margin:0 0 14px; color:var(--blue)}.ref{padding:13px 0; border-top:1px solid var(--line); font-size:13.7px}.ref .name{font-weight:850}.ref .title{color:var(--muted); margin-top:3px; line-height:1.45}
+footer{padding:38px 0; text-align:center; color:var(--faint); font-size:12px; letter-spacing:.04em}.dotsep{margin:0 8px; color:var(--blue-2)}
 
-@media(prefers-reduced-motion:no-preference){.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease}.reveal.in{opacity:1; transform:translateY(0)}}
-@media print{body{background:white}.top,.hero-actions,.pub-tools,.impact-strip{display:none}.section{padding:20px 0; page-break-inside:avoid}.fund-panel{position:relative; top:0}}
+@media(prefers-reduced-motion:no-preference){.reveal{opacity:0; transform:translateY(14px); transition:opacity .65s ease, transform .65s ease}.reveal.in{opacity:1; transform:translateY(0)}}
+@media print{.top,.actions,.pub-tools,.stats{display:none}.section{padding:22px 0; page-break-inside:avoid}.fund-panel{position:relative; top:0; color:black; background:white; border:1px solid var(--line)}}
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap top-inner">
-    <a class="brand" href="#top"><span class="brand-dot"></span>Muhammad Irfan</a>
+    <a class="brand" href="#top"><span class="brand-mark">MI</span><span>Muhammad Irfan (PhD, PhD)</span></a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#map">Research map</a>
+      <a href="#visuals">Research map</a>
       <a href="#roles">Roles</a>
       <a href="#publications">Publications</a>
       <a href="#funding">Funding</a>
-      <a href="#contact" class="nav-pill">Contact</a>
+      <a class="nav-pill" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
-<section class="hero wrap">
-  <div class="hero-grid">
+<section class="hero">
+  <div class="wrap hero-grid">
     <div>
       <div class="hero-kicker">
-        <span class="eyebrow">Senior Researcher · PI · Visiting Research Fellow</span>
-        <span class="status"><span class="status-dot"></span>Open to collaborations</span>
+        <span class="eyebrow">Senior Researcher · Principal Investigator · Visiting Research Fellow</span>
+        <span class="status"><span class="status-dot"></span>Open to collaboration</span>
       </div>
-      <h1>Muhammad <em>Irfan</em></h1>
-      <p class="hero-thesis">I build <span class="mark">efficient, clinically grounded AI</span> that translates hospital-grade physiological and imaging data into real-world tools for dementia care, cardiovascular risk, sleep health, and personalised monitoring.</p>
-      <p class="hero-summary">My research connects wearable sensing, multimodal biomedical signals, translational medical imaging, edge AI, and federated learning. The central question is simple but difficult: how can AI move from clean datasets into the messy, longitudinal reality of patients, caregivers, and clinics?</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#map">Explore research map <span class="arrow">→</span></a>
+      <h1>Muhammad Irfan <span>(PhD, PhD)</span></h1>
+      <p class="hero-thesis">Designing <em>efficient, clinically grounded AI</em> for dementia care, cardiovascular risk, sleep health, wearable sensing, and translational medical imaging.</p>
+      <p class="hero-summary">My research connects hospital-grade data with real-world care: MRI, CT, PET, EEG, ECG, PPG, wearable sensors, edge AI and federated learning. The goal is not only better algorithms, but deployable systems that can support patients, caregivers, clinicians and research consortia.</p>
+      <div class="actions">
+        <a class="btn primary" href="#visuals">View research visualisation <span class="arrow">→</span></a>
         <a class="btn" href="#publications">Selected publications</a>
         <a class="btn" href="mailto:muhammad.irfan@sydney.edu.au">Email</a>
         <a class="btn" href="https://orcid.org/0009-0005-4326-932X" target="_blank" rel="noopener">ORCID</a>
@@ -260,114 +261,119 @@ footer{padding:38px 0; text-align:center; color:var(--soft); font-size:12px; let
       </div>
     </div>
 
-    <aside class="profile-card" aria-label="Profile summary">
+    <aside class="profile-card" aria-label="Profile card">
       <div class="portrait">
-        <div class="initials">MI</div>
-        <div class="portrait-note"> Picture <b>profile.jpg</b> and insert an &lt;img&gt; tag here.</div>
+        <svg viewBox="0 0 420 420" role="img" aria-label="Biomedical AI illustration">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0f3d5e"/><stop offset="1" stop-color="#1b8a7a"/></linearGradient>
+            <linearGradient id="g2" x1="0" x2="1"><stop stop-color="#dbeff5"/><stop offset="1" stop-color="#eef8f3"/></linearGradient>
+          </defs>
+          <rect x="34" y="42" width="352" height="336" rx="44" fill="url(#g2)"/>
+          <circle cx="210" cy="180" r="78" fill="white" stroke="#b8d1dc" stroke-width="4"/>
+          <path d="M166 180c22-58 66-58 88 0-22 58-66 58-88 0Z" fill="none" stroke="url(#g1)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M121 257c32-34 66-51 101-51 35 0 63 17 77 51" fill="none" stroke="#0f3d5e" stroke-width="12" stroke-linecap="round"/>
+          <path d="M99 123c35-18 67-18 96 0M225 123c34-18 66-18 96 0" fill="none" stroke="#1b8a7a" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="105" cy="310" r="15" fill="#d36b32"/><circle cx="315" cy="310" r="15" fill="#6b5bd6"/><circle cx="210" cy="318" r="15" fill="#1b8a7a"/>
+          <path d="M120 310h75M225 318h75" stroke="#8fb5c3" stroke-width="6" stroke-linecap="round"/>
+          <path d="M210 75v48M210 239v52" stroke="#8fb5c3" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <div class="portrait-note">To add your photo: save it as <b>profile.jpg</b>, then replace this SVG with &lt;img src="profile.jpg" class="profile-img" alt="Muhammad Irfan"&gt;.</div>
       </div>
-      <div class="eyebrow">Current academic identity</div>
-      <div class="affiliation-list">
-        <div class="affiliation"><span class="pin"></span><span><b>University of Turku</b><br>Senior Researcher, Institute of Biomedicine; AI Technical Lead, AI4HOPE</span></div>
-        <div class="affiliation"><span class="pin"></span><span><b>Fudan University</b><br>Project PI, Shanghai Sci-Tech “From PSG to Wristband”</span></div>
-        <div class="affiliation"><span class="pin"></span><span><b>University of Sydney</b><br>Visiting Researcher, School of Biomedical Engineering</span></div>
-        <div class="affiliation"><span class="pin"></span><span><b>Research brand</b><br>Heart–brain–sleep axis, dementia care, wearables, edge AI, translational imaging</span></div>
+      <div class="profile-lines">
+        <div class="profile-line"><span class="icon-dot"></span><span><b>University of Turku</b><br>Senior Researcher; AI Technical Lead, AI4HOPE</span></div>
+        <div class="profile-line"><span class="icon-dot"></span><span><b>Fudan University</b><br>Project PI, Shanghai Sci-Tech “From PSG to Wristband”</span></div>
+        <div class="profile-line"><span class="icon-dot"></span><span><b>University of Sydney</b><br>Visiting Researcher, Biomedical Engineering</span></div>
+        <div class="profile-line"><span class="icon-dot"></span><span><b>Research focus</b><br>Dementia care, heart–brain–sleep axis, wearables, edge AI, translational imaging</span></div>
       </div>
     </aside>
   </div>
 </section>
 
-<section class="impact-strip" aria-label="Impact highlights">
-  <div class="wrap impact-grid">
-    <div class="impact"><div class="num">28<span>+</span></div><div class="label">Peer-reviewed papers</div></div>
-    <div class="impact"><div class="num">2</div><div class="label">Doctorates</div></div>
-    <div class="impact"><div class="num">€20M<span>+</span></div><div class="label">Co-led applications</div></div>
-    <div class="impact"><div class="num">17</div><div class="label">AI4HOPE partners</div></div>
-    <div class="impact"><div class="num">3</div><div class="label">Continental networks</div></div>
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><div class="num">28<span>+</span></div><div class="label">Peer-reviewed papers</div></div>
+    <div class="stat"><div class="num">2</div><div class="label">Doctorates</div></div>
+    <div class="stat"><div class="num">€20M<span>+</span></div><div class="label">Co-led applications</div></div>
+    <div class="stat"><div class="num">17</div><div class="label">AI4HOPE partners</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Continental networks</div></div>
   </div>
 </section>
 
 <section class="section wrap" id="about">
   <div class="section-head reveal">
     <div class="section-num">01 /</div>
-    <h2>A researcher working where <em>biomedical AI</em> meets clinical reality.</h2>
+    <h2>Biomedical AI with a clear translational direction: <em>from data to care</em>.</h2>
   </div>
-  <div class="story-grid">
-    <article class="story-card reveal">
-      <div class="eyebrow">Positioning</div>
-      <p>I am a Senior Researcher, Principal Investigator, Visiting Research Fellow, and Supervisor in artificial intelligence for healthcare. My work spans AI for health monitoring, prevention, intervention and treatment, together with translational medical imaging and wearable physiological sensing.</p>
-      <p>I completed my first PhD in Biomedical Engineering at Fudan University in December 2024 and my second PhD in Information and Communication Engineering at the University of Turku in April 2026. The two degrees shaped the same research direction from two sides: biomedical measurement and computational efficiency.</p>
-      <p>The strongest version of this profile is not “AI for healthcare” in general. It is more specific: translating multimodal sleep, cardiovascular, signal, and imaging biomarkers into deployable AI systems for dementia care, CVD risk, and personalised monitoring.</p>
+  <div class="split">
+    <article class="card reveal">
+      <div class="eyebrow">Academic identity</div>
+      <p>I am a Senior Researcher, Principal Investigator, Visiting Research Fellow and Supervisor working in artificial intelligence for healthcare. My expertise spans health monitoring, prevention, intervention and treatment, wearable physiological sensing, edge AI, federated learning and translational medical imaging.</p>
+      <p>I completed my first PhD in Biomedical Engineering at Fudan University in December 2024 and my second PhD in Information and Communication Engineering at the University of Turku in April 2026. Together, these degrees connect biomedical measurement, signal processing, imaging and computationally efficient AI.</p>
     </article>
-    <aside class="thesis-box reveal">
-      <h3>Research thesis</h3>
-      <p>Healthcare AI should not only win benchmarks. It should be computationally efficient, privacy-aware, interpretable enough for clinical reasoning, and robust enough for longitudinal home and hospital data. That is why my work combines edge AI, federated learning, wearable physiology, and translational imaging.</p>
+    <aside class="highlight-card reveal">
+      <h3>The core message</h3>
+      <p>The strongest way to position this profile is not “AI for healthcare” in general. It is more specific and more credible: translating multimodal sleep, cardiovascular, physiological and imaging biomarkers into deployable AI systems for dementia care, CVD risk prediction and personalised monitoring.</p>
     </aside>
   </div>
 
-  <div class="map-wrap reveal" id="map">
-    <div class="map-title">
-      <h3>Research map</h3>
-      <p>A clearer way to understand the portfolio: sensors and imaging generate biomarkers; AI models turn them into risk, prognosis and monitoring; edge/federated deployment moves them toward real-world care.</p>
+  <div class="visual-panel reveal" id="visuals">
+    <div class="visual-title">
+      <h3>Research visualisation</h3>
+      <p>A professional reader should immediately see the logic of the work: multimodal data enters, efficient and privacy-aware AI learns, and clinically meaningful outputs support dementia care, CVD risk and treatment planning.</p>
     </div>
-    <div class="research-map">
-      <div class="map-node"><h4>Wearable physiology</h4><p>ECG, PPG, EEG, EMG, GSR, actigraphy, Polar 360 and Polar AccessLink pipelines for continuous home monitoring.</p></div>
-      <div class="map-node orange"><h4>Medical imaging</h4><p>MRI, CT, PET and ultrasound models for brain tumours, stroke, head-and-neck cancer and cerebrovascular stratification.</p></div>
-      <div class="map-node blue"><h4>Clinical outcomes</h4><p>Dementia care, cardiovascular disease, pain, anxiety, depression, quality of life, cognitive decline and treatment toxicity.</p></div>
-      <div class="bridge">
-        <div class="bridge-step"><b>1 · Acquire</b>Signals, images and clinical variables from hospital and home settings.</div>
-        <div class="bridge-step"><b>2 · Learn</b>Efficient CNNs, ensembles, foundation models, transfer learning and multimodal fusion.</div>
-        <div class="bridge-step"><b>3 · Protect</b>Federated and edge–cloud workflows to reduce data transfer and support privacy.</div>
-        <div class="bridge-step"><b>4 · Translate</b>Dashboards, risk models and caregiver/clinician decision-support pathways.</div>
+    <div class="pipeline">
+      <div class="v-card teal">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#e6f6f3"/><path d="M15 34h8l4-13 9 28 5-15h8" fill="none" stroke="#1b8a7a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Wearable physiology</h4>
+        <p>ECG, PPG, EEG, EMG, GSR and actigraphy from home and clinical settings, including Polar-based workflows.</p>
       </div>
-      <div class="map-node gold"><h4>Heart–brain–sleep axis</h4><p>Connecting cardiovascular dysfunction, sleep biomarkers, dementia risk, stroke and cognitive decline.</p></div>
-      <div class="map-node"><h4>Efficient AI</h4><p>LiteML architectures, lightweight CNNs and hybrid models designed for practical edge–cloud deployment.</p></div>
-      <div class="map-node orange"><h4>Care impact</h4><p>Monitoring, risk stratification, adaptive interventions, caregiver support and personalised treatment planning.</p></div>
+      <div class="v-card orange">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff0e8"/><rect x="17" y="14" width="30" height="38" rx="8" fill="none" stroke="#d36b32" stroke-width="4"/><path d="M23 26h18M23 34h18M23 42h10" stroke="#d36b32" stroke-width="4" stroke-linecap="round"/></svg>
+        <h4>Medical imaging</h4>
+        <p>MRI, CT, PET and ultrasound models for brain tumours, stroke, head-and-neck cancer and cerebrovascular stratification.</p>
+      </div>
+      <div class="v-card purple">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#f0eeff"/><path d="M20 43c0-11 6-22 12-22s12 11 12 22" fill="none" stroke="#6b5bd6" stroke-width="4" stroke-linecap="round"/><path d="M20 43h24M24 31h16" stroke="#6b5bd6" stroke-width="4" stroke-linecap="round"/></svg>
+        <h4>Clinical outcomes</h4>
+        <p>Dementia care, cardiovascular risk, cognitive decline, pain, anxiety, depression, quality of life and treatment toxicity.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-step"><b>1 · Acquire</b>Signals, images and clinical variables from hospital and home contexts.</div>
+        <div class="flow-step"><b>2 · Model</b>Efficient CNNs, ensembles, foundation models, transfer learning and multimodal fusion.</div>
+        <div class="flow-step"><b>3 · Protect</b>Federated and edge–cloud workflows reduce data movement and support privacy.</div>
+        <div class="flow-step"><b>4 · Translate</b>Risk models, dashboards and caregiver/clinician decision-support pathways.</div>
+      </div>
+      <div class="v-card gold">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff7e5"/><path d="M19 32c8-18 18-18 26 0-8 18-18 18-26 0Z" fill="none" stroke="#b88724" stroke-width="4"/><circle cx="32" cy="32" r="6" fill="#b88724"/></svg>
+        <h4>Heart–brain–sleep axis</h4>
+        <p>Connecting sleep physiology, cardiovascular dysfunction, dementia risk, stroke and cognitive decline.</p>
+      </div>
+      <div class="v-card green">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#eef8f2"/><path d="M18 39l12-12 8 8 10-14" fill="none" stroke="#2e8b57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 48h32" stroke="#2e8b57" stroke-width="4" stroke-linecap="round"/></svg>
+        <h4>Efficient AI</h4>
+        <p>LiteML architectures, lightweight CNNs, hybrid models and explainable pipelines built for practical deployment.</p>
+      </div>
+      <div class="v-card">
+        <svg class="v-icon" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#eaf4fa"/><path d="M22 37c-5-7-4-16 4-20 6-3 11 1 13 6 6-1 11 3 11 10 0 8-7 14-18 19-4-2-7-4-10-7" fill="none" stroke="#0f3d5e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Care impact</h4>
+        <p>Monitoring, risk stratification, adaptive intervention design, caregiver support and personalised treatment planning.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section wrap" id="roles">
-  <div class="section-head reveal">
-    <div class="section-num">02 /</div>
-    <h2>Concurrent roles across <em>Finland, China and Australia</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">02 /</div><h2>Concurrent roles across <em>Finland, China and Australia</em>.</h2></div>
   <div class="roles">
-    <article class="role-card reveal">
-      <div class="date">2025 — Present · Full time</div>
-      <h3>Senior Researcher · AI Technical Lead, AI4HOPE</h3>
-      <div class="org">University of Turku, Institute of Biomedicine · Finland</div>
-      <p>AI Technical Lead for Work Package 3, Task 3.4, in the €6.4M EU Horizon AI4HOPE consortium. Developing explainable models for anxiety, depression, pain and quality-of-life trajectories in dementia patients using wearable cardiovascular signals and clinical data.</p>
-      <div class="badges"><span class="badge">EU Horizon</span><span class="badge">17 partners</span><span class="badge">Dementia care</span></div>
-    </article>
-    <article class="role-card reveal">
-      <div class="date">2025 — Present</div>
-      <h3>Project Principal Investigator</h3>
-      <div class="org">Fudan University · Shanghai, China</div>
-      <p>Leading the 400,000 RMB “From PSG to Wristband” Shanghai Sci-Tech project. The work translates polysomnography-derived sleep and cardiovascular biomarkers to consumer wristbands for CVD–dementia risk stratification.</p>
-      <div class="badges"><span class="badge orange">PI</span><span class="badge">PSG to wristband</span><span class="badge">Transfer learning</span></div>
-    </article>
-    <article class="role-card reveal">
-      <div class="date">2025 — Present</div>
-      <h3>Visiting Researcher</h3>
-      <div class="org">University of Sydney, School of Biomedical Engineering · Australia</div>
-      <p>Collaborating with Prof. Wei Chen and clinical partners on physiological signal monitoring and AI for cardiac and mental health. This appointment anchors active collaboration with the Australian biomedical engineering and clinical research ecosystem.</p>
-      <div class="badges"><span class="badge">USYD</span><span class="badge">Physiological AI</span></div>
-    </article>
-    <article class="role-card reveal">
-      <div class="date">2025 — Present</div>
-      <h3>Teacher · Statistical Data Analysis</h3>
-      <div class="org">University of Turku, Department of Computing · Finland</div>
-      <p>Co-teaching Statistical Data Analysis to approximately 150 undergraduate and graduate students, with Python notebooks and real-world biomedical datasets including MRI, PPG, ECG, EEG and actigraphy.</p>
-      <div class="badges"><span class="badge">Teaching</span><span class="badge">~150 students</span></div>
-    </article>
+    <article class="role reveal"><div class="date">2025 — Present · Full time</div><h3>Senior Researcher · AI Technical Lead, AI4HOPE</h3><div class="org">University of Turku, Institute of Biomedicine · Finland</div><p>AI Technical Lead for WP3 Task 3.4 in the €6.4M EU Horizon AI4HOPE consortium. Developing explainable AI models for anxiety, depression, pain and quality-of-life trajectories in dementia patients using wearable cardiovascular signals and clinical data.</p><div class="badges"><span class="badge">EU Horizon</span><span class="badge">17 partners</span><span class="badge">Dementia care</span></div></article>
+    <article class="role reveal"><div class="date">2025 — Present</div><h3>Project Principal Investigator</h3><div class="org">Fudan University · Shanghai, China</div><p>Leading the 400,000 RMB “From PSG to Wristband” Shanghai Sci-Tech project, translating polysomnography-derived sleep and cardiovascular biomarkers to wristband-based CVD–dementia risk stratification.</p><div class="badges"><span class="badge">PI</span><span class="badge">PSG to wristband</span><span class="badge">Transfer learning</span></div></article>
+    <article class="role reveal"><div class="date">2025 — Present</div><h3>Visiting Researcher</h3><div class="org">University of Sydney, School of Biomedical Engineering · Australia</div><p>Collaborating with Prof. Wei Chen and clinical partners on physiological signal monitoring and AI for cardiac and mental health, strengthening links with the Australian biomedical engineering and clinical research ecosystem.</p><div class="badges"><span class="badge">USYD</span><span class="badge">Physiological AI</span></div></article>
+    <article class="role reveal"><div class="date">2025 — Present</div><h3>Teacher · Statistical Data Analysis</h3><div class="org">University of Turku, Department of Computing · Finland</div><p>Co-teaching Statistical Data Analysis to approximately 150 undergraduate and graduate students using Python, Jupyter notebooks and real biomedical datasets including MRI, PPG, ECG, EEG and actigraphy.</p><div class="badges"><span class="badge">Teaching</span><span class="badge">~150 students</span></div></article>
   </div>
 </section>
 
 <section class="section wrap" id="education">
-  <div class="section-head reveal">
-    <div class="section-num">03 /</div>
-    <h2>Two doctorates with a shared theme: <em>measurement plus efficient AI</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">03 /</div><h2>Two doctorates with one direction: <em>measurement plus efficient AI</em>.</h2></div>
   <div class="timeline">
     <div class="timeline-row reveal"><div class="year">April 2026</div><div><h3>PhD, Information and Communication Engineering</h3><div class="where">University of Turku · Finland</div><div class="desc">Dissertation: <em>Computationally Efficient AI in Brain-Tumour MRI, and Physiological Signals in Sleep and Emotion Analysis.</em> Supervisor: Prof. Tomi Westerlund.</div></div></div>
     <div class="timeline-row reveal"><div class="year">Dec 2024</div><div><h3>PhD, Biomedical Engineering — AI in Healthcare</h3><div class="where">Fudan University · Shanghai, China</div><div class="desc">Dissertation: <em>Tailored Healthcare Monitoring Solutions for Personalised Care: Advanced Physiological Data Measurement and Analysis using AI for IoT Systems.</em> Supervisor: Prof. Wei Chen.</div></div></div>
@@ -376,18 +382,10 @@ footer{padding:38px 0; text-align:center; color:var(--soft); font-size:12px; let
 </section>
 
 <section class="section wrap" id="publications">
-  <div class="section-head reveal">
-    <div class="section-num">04 /</div>
-    <h2>Selected publications across <em>IEEE TBME, JBHI, IoT Journal, Sensors and TCE</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">04 /</div><h2>Selected publications across <em>IEEE TBME, JBHI, IoT Journal, Sensors and TCE</em>.</h2></div>
   <div class="pub-tools reveal">
     <div class="tabs" role="tablist" aria-label="Publication filters">
-      <button class="tab active" data-filter="all">All</button>
-      <button class="tab" data-filter="first">First author</button>
-      <button class="tab" data-filter="ieee">IEEE journals</button>
-      <button class="tab" data-filter="sleep">Sleep & wearables</button>
-      <button class="tab" data-filter="imaging">Imaging</button>
-      <button class="tab" data-filter="conf">Conferences & chapters</button>
+      <button class="tab active" data-filter="all">All</button><button class="tab" data-filter="first">First author</button><button class="tab" data-filter="ieee">IEEE journals</button><button class="tab" data-filter="sleep">Sleep & wearables</button><button class="tab" data-filter="imaging">Imaging</button><button class="tab" data-filter="conf">Conferences & chapters</button>
     </div>
     <input class="search" id="pubSearch" type="search" placeholder="Search publications..." aria-label="Search publications">
   </div>
@@ -410,84 +408,61 @@ footer{padding:38px 0; text-align:center; color:var(--soft); font-size:12px; let
 </section>
 
 <section class="section wrap" id="funding">
-  <div class="section-head reveal">
-    <div class="section-num">05 /</div>
-    <h2>Funding portfolio with a new <em>postdoctoral dementia-care grant</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">05 /</div><h2>Funding portfolio with new <em>postdoctoral dementia-care support</em>.</h2></div>
   <div class="funding-grid">
     <div>
-      <article class="grant reveal"><div class="year">2026</div><div><h3>Turku University Foundation Postdoctoral Funding</h3><p><b>.</b> Postdoctoral research support for dementia care using artificial intelligence.</p></div></article>
+      <article class="grant reveal"><div class="year">2026</div><div><h3>Turku University Foundation Postdoctoral Funding</h3><p><b>New funding.</b> Postdoctoral support for dementia care using artificial intelligence. This strengthens the independent research trajectory after two PhDs.</p></div></article>
       <article class="grant reveal"><div class="year">2025—Present</div><div><h3>From PSG to Wristband — Shanghai Sci-Tech Co-research</h3><p><b>400,000 RMB · Project PI.</b> Multi-country collaboration across Fudan, University of Turku and University of Sydney. Translating PSG biomarkers to wristband-based CVD–dementia risk stratification.</p></div></article>
-      <article class="grant reveal"><div class="year">2024—2027</div><div><h3>AI4HOPE — EU Horizon Europe</h3><p><b>€6.4M total consortium.</b> AI Technical Lead for WP3 Task 3.4. Work includes explainable AI, wearable cardiovascular signals, clinical data integration, federated learning and dementia-care pathways.</p></div></article>
+      <article class="grant reveal"><div class="year">2024—2027</div><div><h3>AI4HOPE — EU Horizon Europe</h3><p><b>€6.4M total consortium.</b> AI Technical Lead for WP3 Task 3.4, including wearable cardiovascular signals, clinical data integration, explainable AI, federated learning and dementia-care pathways.</p></div></article>
       <article class="grant reveal"><div class="year">2024—2025</div><div><h3>University of Turku Research Grant</h3><p><b>€24,000 · Lead applicant.</b> Deep learning for PET/MRI cerebrovascular stratification.</p></div></article>
       <article class="grant reveal"><div class="year">2024—2025</div><div><h3>Finland–China Mobility Grant</h3><p><b>€10,888 · Lead applicant.</b> AI research exchange involving dementia and neonatal sleep analysis.</p></div></article>
       <article class="grant reveal"><div class="year">2023—2024</div><div><h3>Finnish National Agency for Education Fellowship</h3><p><b>€17,100 · Sole recipient.</b> Competitive doctoral/postgraduate research support.</p></div></article>
       <article class="grant reveal"><div class="year">2018—2021</div><div><h3>CSC Fellowship</h3><p><b>~€80,000.</b> Scholarship support during Fudan University training.</p></div></article>
     </div>
     <aside class="fund-panel reveal">
-      <div class="big">€20M+</div>
-      <div class="label">Applications co-led in 2025</div>
+      <div class="big">€20M+</div><div class="label">Applications co-led in 2025</div>
       <div class="panel-row"><span>Major applications initiated/co-led</span><span>11</span></div>
       <div class="panel-row"><span>Funded</span><span>1</span></div>
       <div class="panel-row"><span>Under review</span><span>5</span></div>
       <div class="panel-row"><span>Major 2026 submissions</span><span>3</span></div>
       <div class="panel-row"><span>Smaller foundation applications</span><span>4</span></div>
       <div class="panel-row"><span>Consortia in development</span><span>6</span></div>
-      <p style="position:relative;opacity:.72;font-size:13px;line-height:1.6;margin:24px 0 0">Schemes include MRFF, NHMRC, Horizon Europe, EIC Pathfinder, Novo Nordisk Foundation, Research Council of Finland and the Finnish Foundation for Cardiovascular Research.</p>
+      <p style="position:relative;opacity:.75;font-size:13px;line-height:1.62;margin:24px 0 0">Schemes include MRFF, NHMRC, Horizon Europe, EIC Pathfinder, Novo Nordisk Foundation, Research Council of Finland and the Finnish Foundation for Cardiovascular Research.</p>
     </aside>
   </div>
 </section>
 
 <section class="section wrap" id="outputs">
-  <div class="section-head reveal">
-    <div class="section-num">06 /</div>
-    <h2>Technical outputs that show <em>depth, not decoration</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">06 /</div><h2>Technical outputs that show <em>depth, not decoration</em>.</h2></div>
   <div class="output-grid">
-    <article class="output-card reveal"><h3>Wearables & signals</h3><ul><li>Neonatal sleep-staging AI pipeline with reported benchmark gains</li><li>Non-contact ECG system for elderly care and ambient monitoring</li><li>Emotion-recognition pipelines using minimal wearable sensing</li><li>Polar SDK and real-time physiology streaming workflows</li></ul></article>
+    <article class="output-card reveal"><h3>Wearables & signals</h3><ul><li>Neonatal sleep-staging AI pipeline with benchmark gains</li><li>Non-contact ECG system for elderly care and ambient monitoring</li><li>Emotion-recognition pipelines using minimal wearable sensing</li><li>Polar SDK and real-time physiology streaming workflows</li></ul></article>
     <article class="output-card reveal"><h3>Imaging & clinical AI</h3><ul><li>Lightweight MRI brain-tumour detection and segmentation models</li><li>Brain CT stroke classification using pretrained CNNs</li><li>PET/MRI cerebrovascular stratification</li><li>Head-and-neck cancer imaging collaborations</li></ul></article>
-    <article class="output-card reveal"><h3>Deployment & governance</h3><ul><li>Edge–cloud workflows to reduce data transfer</li><li>Federated learning across multi-site healthcare data</li><li>Explainable AI for dementia monitoring and treatment planning</li><li>Research-led teaching and student supervision pipelines</li></ul></article>
+    <article class="output-card reveal"><h3>Deployment & governance</h3><ul><li>Edge–cloud workflows to reduce data transfer</li><li>Federated learning across multi-site healthcare data</li><li>Explainable AI for dementia monitoring and planning</li><li>Research-led teaching and student supervision pipelines</li></ul></article>
   </div>
 </section>
 
 <section class="section wrap" id="teaching">
-  <div class="section-head reveal">
-    <div class="section-num">07 /</div>
-    <h2>Teaching, supervision and academic leadership.</h2>
-  </div>
-  <div class="story-grid">
-    <article class="story-card reveal"><div class="eyebrow">Teaching</div><p>Teacher for Statistical Data Analysis at the University of Turku, serving approximately 150 undergraduate and graduate students. Teaching uses biomedical datasets and Python/Jupyter notebooks to connect statistics, machine learning and health technology.</p><p>The important message here is not only that teaching happened, but that teaching is research-led: students work with problems that resemble real biomedical AI pipelines.</p></article>
-    <article class="story-card reveal"><div class="eyebrow">Supervision and leadership</div><p>Co-supervisor of one PhD student and supervisor/co-supervisor of six MSc theses on topics including brain tumour and head-and-neck segmentation, MRI outcome prediction, sleep staging and edge AI for wearable health monitoring.</p><p>Leadership includes AI4HOPE technical coordination, federated-learning planning, cross-site validation, junior researcher mentoring and consortium-building across Europe, Australia and China.</p></article>
+  <div class="section-head reveal"><div class="section-num">07 /</div><h2>Teaching, supervision and academic leadership.</h2></div>
+  <div class="split">
+    <article class="card reveal"><div class="eyebrow">Teaching</div><p>Teacher for Statistical Data Analysis at the University of Turku, serving approximately 150 undergraduate and graduate students. Teaching uses biomedical datasets and Python/Jupyter notebooks to connect statistics, machine learning and health technology.</p><p>The important message is not only that teaching happened, but that teaching is research-led: students work with problems that resemble real biomedical AI pipelines.</p></article>
+    <article class="card reveal"><div class="eyebrow">Supervision and leadership</div><p>Co-supervisor of one PhD student and supervisor/co-supervisor of six MSc theses on topics including brain tumour and head-and-neck segmentation, MRI outcome prediction, sleep staging and edge AI for wearable health monitoring.</p><p>Leadership includes AI4HOPE technical coordination, federated-learning planning, cross-site validation, junior researcher mentoring and consortium-building across Europe, Australia and China.</p></article>
   </div>
 </section>
 
 <section class="section wrap" id="awards">
-  <div class="section-head reveal">
-    <div class="section-num">08 /</div>
-    <h2>Recognition and service.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">08 /</div><h2>Recognition and service.</h2></div>
   <div class="awards reveal">
     <div class="award star"><span class="yr">2024</span>Best Paper Award · IEEE PICCONF</div>
     <div class="award star"><span class="yr">2020</span>Excellence in Research Award · Fudan University</div>
-    <div class="award"><span class="yr">2021—2025</span>PhD scholarship</div>
-    <div class="award"><span class="yr">2018—2021</span>Master scholarship</div>
-    <div class="award"><span class="yr">2016—2018</span>Punjab Government scholarship</div>
-    <div class="award"><span class="yr">2016</span>Chief Minister Laptop</div>
-    <div class="award"><span class="yr">2012—2015</span>Bachelor's scholarship</div>
-    <div class="award"><span class="yr">2012</span>Prime Minister Laptop</div>
+    <div class="award"><span class="yr">2021—2025</span>PhD scholarship</div><div class="award"><span class="yr">2018—2021</span>Master scholarship</div><div class="award"><span class="yr">2016—2018</span>Punjab Government scholarship</div><div class="award"><span class="yr">2016</span>Chief Minister Laptop</div><div class="award"><span class="yr">2012—2015</span>Bachelor's scholarship</div><div class="award"><span class="yr">2012</span>Prime Minister Laptop</div>
   </div>
   <p class="reveal" style="margin-top:34px;max-width:74ch;color:var(--muted);line-height:1.72">Member of IEEE and reviewer for IEEE TBME, TNSRE, TII, JBHI and related biomedical engineering and healthcare AI venues. Former General Secretary of Fudan University Pakistan Students Association and active contributor to international student support.</p>
 </section>
 
 <section class="section wrap" id="contact" style="border-bottom:0">
-  <div class="section-head reveal">
-    <div class="section-num">09 /</div>
-    <h2>Open to serious <em>collaboration</em>.</h2>
-  </div>
+  <div class="section-head reveal"><div class="section-num">09 /</div><h2>Open to serious <em>collaboration</em>.</h2></div>
   <div class="contact-grid">
-    <div class="reveal">
-      <p class="contact-title">Let’s <em>connect.</em></p>
-      <p style="color:var(--muted);line-height:1.75;max-width:58ch">I welcome conversations on grant consortia, clinical AI validation, heart–brain–sleep axis research, wearable sensing for dementia care, edge/federated learning, translational imaging and postdoctoral or faculty-level collaborations.</p>
+    <div class="reveal"><p class="contact-title">Let’s <em>connect.</em></p><p style="color:var(--muted);line-height:1.75;max-width:58ch">I welcome conversations on grant consortia, clinical AI validation, heart–brain–sleep axis research, wearable sensing for dementia care, edge/federated learning, translational imaging and postdoctoral or faculty-level collaborations.</p>
       <div class="contact-lines">
         <div class="contact-line"><div class="k">Email</div><div class="v"><a class="link" href="mailto:muhammad.irfan@sydney.edu.au">muhammad.irfan@sydney.edu.au</a></div></div>
         <div class="contact-line"><div class="k">ORCID</div><div class="v"><a class="link" href="https://orcid.org/0009-0005-4326-932X" target="_blank" rel="noopener">0009-0005-4326-932X</a></div></div>
@@ -495,31 +470,19 @@ footer{padding:38px 0; text-align:center; color:var(--soft); font-size:12px; let
         <div class="contact-line"><div class="k">Based</div><div class="v">Turku, Finland · Collaborating across Europe, China and Australia</div></div>
       </div>
     </div>
-    <aside class="refs reveal">
-      <h3>Selected references</h3>
-      <div class="ref"><div class="name">Prof. Wei Chen</div><div class="title">Head of School, Biomedical Engineering · University of Sydney</div></div>
-      <div class="ref"><div class="name">Prof. Tomi Westerlund</div><div class="title">University of Turku · Finland</div></div>
-      <div class="ref"><div class="name">Prof. Theodoros Arvanitis</div><div class="title">Head of Electronic, Electrical & Systems Engineering · University of Birmingham</div></div>
-      <div class="ref"><div class="name">Prof. Jennifer Tieman</div><div class="title">Director, Research Centre in Palliative Care, Death and Dying · Flinders University</div></div>
-      <div class="ref"><div class="name">Prof. Amir M. Rahmani</div><div class="title">University of California · Nursing and Health Sciences</div></div>
-      <div class="ref"><div class="name">Assoc. Prof. Jim Whittle</div><div class="title">Peter MacCallum Cancer Centre and WEHI · Australia</div></div>
-    </aside>
+    <aside class="refs reveal"><h3>Selected references</h3><div class="ref"><div class="name">Prof. Wei Chen</div><div class="title">Head of School, Biomedical Engineering · University of Sydney</div></div><div class="ref"><div class="name">Prof. Tomi Westerlund</div><div class="title">University of Turku · Finland</div></div><div class="ref"><div class="name">Prof. Theodoros Arvanitis</div><div class="title">Head of Electronic, Electrical & Systems Engineering · University of Birmingham</div></div><div class="ref"><div class="name">Prof. Jennifer Tieman</div><div class="title">Director, Research Centre in Palliative Care, Death and Dying · Flinders University</div></div><div class="ref"><div class="name">Prof. Amir M. Rahmani</div><div class="title">University of California · Nursing and Health Sciences</div></div><div class="ref"><div class="name">Assoc. Prof. Jim Whittle</div><div class="title">Peter MacCallum Cancer Centre and WEHI · Australia</div></div></aside>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="wrap">© <span id="year"></span> Muhammad Irfan <span class="dotsep">·</span> Last updated April 2026 <span class="dotsep">·</span> Single-page academic portfolio</div>
-</footer>
+<footer><div class="wrap">© <span id="year"></span> Muhammad Irfan (PhD, PhD) <span class="dotsep">·</span> Last updated April 2026 <span class="dotsep">·</span> Single-page academic portfolio</div></footer>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-
 const tabs = document.querySelectorAll('.tab');
 const pubs = document.querySelectorAll('.pub');
 const search = document.getElementById('pubSearch');
 let activeFilter = 'all';
-
 function applyPublicationFilters(){
   const q = (search.value || '').trim().toLowerCase();
   pubs.forEach(pub => {
@@ -530,27 +493,11 @@ function applyPublicationFilters(){
     pub.classList.toggle('hidden', !(matchesFilter && matchesSearch));
   });
 }
-
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    activeFilter = tab.dataset.filter;
-    applyPublicationFilters();
-  });
-});
+tabs.forEach(tab => {tab.addEventListener('click', () => {tabs.forEach(t => t.classList.remove('active')); tab.classList.add('active'); activeFilter = tab.dataset.filter; applyPublicationFilters();});});
 search.addEventListener('input', applyPublicationFilters);
-
 if ('IntersectionObserver' in window) {
   const targets = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+  const io = new IntersectionObserver(entries => {entries.forEach(entry => {if (entry.isIntersecting) {entry.target.classList.add('in'); io.unobserve(entry.target);}});}, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
   targets.forEach(target => io.observe(target));
 }
 </script>
